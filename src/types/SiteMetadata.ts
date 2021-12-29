@@ -1,0 +1,25 @@
+export type SiteMetadata = {
+  htmlLang: string;
+  contentLang: string;
+  title: string;
+  titleTemplate: string;
+  description: string;
+  siteUrl: string;
+  siteName: string;
+  faviconUrl: string;
+  twitter: string;
+  facebookUrl: string;
+  logoUrl: string;
+  socialSharingImageUrl: string;
+  ctaButtonText: string;
+  ctaButtonUrl: string;
+  linkText: string;
+  linkUrl: string;
+  headline: string;
+  footerUrl: string;
+  footerText: string;
+  googleTagManagerId: string;
+  googleAnalyticsMeasurementId: string;
+  searchText: string;
+  logoLabel: string;
+};
