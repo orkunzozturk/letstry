@@ -1,0 +1,111 @@
+---
+title: PCB Layers
+description: PCBs are made up of layers that fulfill certain tasks. Copper as the conductor, lamination for adhesive, solder mask as the insulation layer, and silkscreen as the guide.
+author: Nadya Lukman
+categories: ["electronics"]
+date: 2022-01-01
+featured: true
+tags: ['',]
+relatedArticles: ['']
+---
+
+A PCB or Printed Circuit Board minimizes circuit setups from having components connected through copper wires and breadboards, to simply becoming compact, copper printed boards. These circuit boards should have different components to operate: this includes the components themselves, the conductors in the form of copper tracks and pads, insulators in the form of solder masks, also labelings that are done on the silkscreen.
+
+## Mechanical Layer
+
+The mechanical layer of a [PCB design file] should contain the following attributes:
+
+1.  The precise PCB outline/contour
+
+ This could be done by following these rules:
+
+    -   Draw the PCB outline accurately at a 1:1 ratio
+
+    -   All relevant dimensions and some specific tolerances should be included, with the holes in the PCB as a reference for marking
+
+    -   Contour is a closed figure
+
+2.  The exact position and size of some internal grooves or cuts.
+
+3.  Some specific tolerance requirements.
+
+4.  It can also include some customized panel information, such as drilling patterns, hole position information, layer stacking, positioning holes, special production requirements, etc.
+
+The PCB outline or contour is the shape in which the PCB is cut off from the material. The cutting process is generally done by [milling]. The milling tool has the smallest size of 2 mm blade, thus the minimum inner radii of the PCB is 1 mm.
+
+The mechanical layer files also indicate the location and sizes of the slots, cut-outs, and [holes].  Cut-outs are the shape of the grooves that can't be cut using the milling cutter. The width of slots is determined by the tool's diameter and is done by moving the cutter from one point to another point.
+
+Your slots should be indicated as a part of the device package and should be indicated in the drilling file provided to the manufacturer. Slots could also be marked on the main board design. On the other hand, cut-outs don't need any additional indication in files. They are present as the outline of the PCB, with the manufacturer to address the process.
+
+## Copper Layer
+
+
+When designing multi-layered PCBs, the stackup rules must be heavily taken into account. In [stackup design], the use of copper layers is always followed by an insulating layer, and optionally an adhesive or laminating layer. The configuration of these copper layers is however different based on their placements. They can be categorized as the inner and outer layers of the PCB.
+
+[Add a picture on stackup design here that has silkscreen, solder mask via, pad, hole, substrate, prepreg, copper and ground planes]
+
+The outer layers are the ones that are exposed to the outside. That's where you see pads, vias, the solder mask (usually green) and a silkscreen print layer where information about the design of the PCB is presented. There will also be a surface finish layer in the exposed copper layers to keep it safe.
+
+The inner layers involve a substrate layer that constitutes the rigid core of your PCB. Copper alone would be too flexible. Copper layers allow for circuitry to happen(i.e. Electricity to pass through it.), whereas the prepreg layers provide the much needed insulation between the copper layers.
+
+The ground plane is an important part of designing a multilayered PCB, but is not essential for all PCB designs. Ground planes are commonly used to provide isolated voltage and/or signal return paths. They are also used in between signal layers to reduce interference and avoid crosstalks. 
+
+Generally, the copper layers are defined as layers with etched copper on them. On these layers, pads and plated holes are configured. These are designed with the EDA software, where a circular diameter is plotted on the top or bottom plate, and a hole is generated with the same center point. Non-plated holes don't need any copper on the top or bottom layers, since they don't need to be conductive.
+
+
+## Solder mask
+
+A solder mask is a finish or varnish layer applied to prevent short circuits in between different nets due to solder placement, also to prevent oxidization of copper tracks in the PCB.
+
+Designing your solder mask layer can be done directly on the [EDA software], paying special attention to the negative film. Usually, the solder mask layer is the green layer covering the PCB, but other colors, such as yellow, black, blue, red, white, purple, and matte green are also available to choose from. Refer to the guide[tolerance and clearance (device measurements)] for the size specifications.
+
+## Silkscreen
+
+Silkscreening is the process where the manufacturer prints information on the solder mask layer to facilitate the processes of assembly, verification, and repair.
+
+Generally, the silkscreen is printed to show:
+
+-   Test points
+
+-   Polarity marks
+
+-   Device mounting position
+
+-   Device reference number
+
+-   Company or maker's name, logo
+
+-   Assembly or usage explanatory text
+
+The silkscreen is usually automatically generated by the [EDA software], embedded in the [Gerber files], as a file usually named as silkscreen or overlay.
+
+The process of silkscreen printing is usually done according to these rules:
+
+-   The orientation of silkscreen reading should only be in 2 directions.
+
+-   The silkscreen should be read from left to right, top to bottom, neatly and clearly.
+
+-   A component tag must be printed near to the component
+
+-   The writing or symbol should not be covered by any component
+
+Lamination
+----------
+
+The laminating process refers to the process of binding the different PCB layers together, in order to protect and add strength to the different materials used.
+
+The most commonly used laminate materials are made up of fiberglass or other reinforcing materials impregnated with resin. The materials are usually covered and hot-pressed with copper foil. The choice of materials is as follows:
+
+-   FR4
+
+-   High TG FR4
+
+-   Rogers
+
+-   Taconic
+
+-   Arlon
+
+-   Nelco
+
+This laminating process (i.e. the addition of fiberglass) to the board does not have a significant effect on the PCB thickness. The greatest factor of the PCB's thickness is only the process of the glue application. An overflow will cause a significant thickness change to the overall PCB size.

@@ -1,18 +1,18 @@
 ---
 title: PCB Types
 description: Standard and rigid-flex PCBs, HDI PCBs
-author: Orkun Oz
+author: Nadya Lukman
 categories: ["electronics"]
 date: 2022-01-01
 featured: true
-tags: ["die casting", "stamping", "bar extrusion", "laser cutting", "powder metallurgy"]
-relatedArticles: ['Metal Processing','']
+tags: ['', '', '', '', '']
+relatedArticles: ['','']
 ---
 
 PCBs are the core of all electronic devices. Home appliances, vehicles, mobile phones, tablets, all house PCBs. The space and the working conditions of a PCB inside a toaster, in your car, or inside your smartwatch have very little in common. Therefore, different kinds of materials and manufacturing methods are needed in each scenario.
 
 ## Standard PCB
-
+[Image of standard PCB]
 Standard, or rigid PCBs are, as the name suggests, non-flexible circuit boards. They don't bend easily and will likely break if forced to. They are ubiquitous in most electronics devices. They are also well studied and reliable.
 
 Since their materials and processing are well studied and widely available, they have lower batch production costs and consistently higher manufacturing yields than other types of PCBs.
@@ -33,33 +33,37 @@ Here in NexPCB, we provide different materials to construct your standard PCB:
 | Dimension   | Max: 610 \* 1100mm <br /> Mian: 10 \* 20 mm |
 | Thickness   | 0.2 ~ 8.0mm (±10%)               |
 
-***
 
-## Rigid-flex & Flexible PCB
-
+## Flexible PCBs
+[Image of flex PCB]
 
 Wearable electronics and consumer devices that are very dense(i.e. Store many components in a limited space), require circuitry that can fit in very limited spaces or in environments where the circuit will be exposed to bending(such as in smartwatches and other wearable devices).
 
 Flexible PCBs are bendable circuit boards, which are made up of light-weight and thin boards. They can be flex-only or come as a hybrid which are called rigid-flex.
 
 [FIGURE OF FLEX PCB LAYERS]
+### Parts of a Flex PCB
 
 The configuration and materials supported for flexible PCB construction are:
-### Substrate or base material
+#### Substrate or base material
 
 This layer is composed of two conducting layers and an insulating layer in between. The commonly used material for substrates is a combination of PI (Polyimide) for the insulating layer and copper foil for the conducting layers. The layers could be attached together with the help of an adhesive, or bonded together through electroplating, coating, or hot processing methods.
 
--   Cover film
+#### Cover film
 
 It's composed of release paper, glue, and PI. This layer substitutes the need for solder masks.
 
--   Reinforcement
+#### Reinforcement
 
 When needed, flex PCB reinforcements are usually made up of FR4, steel sheet, or PI materials. They are applied after the pasting process and are added through hot pressing or cold pressing methods.
 
--   Other auxiliary materials for putting the boards together include glue, electromagnetic protective film, and copper foil.
+#### Other auxiliary materials
 
-A drawback of having flexible boards is that it's not as robust and strong as standard PCBs. To add strength to these PCBs, the features of the two are merged, creating the rigid-flex technology. 
+Such as  glue, electromagnetic protective film, and copper foil.
+
+## Rigid-Flex PCBs
+[Image of rigid flex PCB]
+A drawback of having flexible boards is that it's not as robust and strong as standard PCBs. To add strength to these PCBs, the features of the two are merged, creating the *rigid-flex PCBs*. 
 
 Rigid-flex PCBs incorporate both flex and rigid PCBs, either externally or internally depending on the design. This means that they can either be sandwiched together during manufacturing, or can be put together externally using edge connectors. When compared with standard PCBs, rigid-flex PCBs can result with cost savings due to the reduced need for wiring and assembly. However, their fabrication difficulty makes them more expensive. Therefore, an objective cost analysis should be made before deciding on using one in your product.
 
@@ -73,85 +77,31 @@ Designing flex or rigid-flex PCBs in CAD is slightly different from designing st
 
 4.  During the addition of a reinforcing layer, a clear description of the layer's position must be indicated.
 
-|
-
-Layer count
-
- |
-
-1-10
-
- |
-|
-
-Dimension
-
- |
-
-Max: 200*800 mm
-
- |
-|
-
-Thickness
-
- |
-
-0.08 ~ 1mm (±10%)
-
- |
+|Property  | Specifications                             |
+|-------------|----------------------------------|
+| Layer Count | 1-10                             |
+| Dimension   | Max: 200 \* 800 mm |
+| Thickness   | 0.08 ~ 1.0mm (±10%)               |
 
 The bending radius and bending cycles of flex and rigid-flex PCBs are as follows, 
 
 [add diagram for bending radius feature]
 
-|
+|Bending Radius  | Bending Cycles                             |
+|-------------|----------------------------------|
+| 5 x thickness | 1                             |
+| 24 x thickness   | 100 |
+| 250 x thickness   | > 10,000               |
 
-Bending radius
-
- |
-
-Bending cycle
-
- |
-|
-
-5 x thickness
-
- |
-
-1
-
- |
-|
-
-24 x thickness
-
- |
-
-100
-
- |
-|
-
-250 x thickness
-
- |
-
-> 10,000
-
- |
-
-HDI PCB
--------
-
+## HDI PCBs
+[Image of HDI PCB]
 HDI, or High-Density Interconnector PCBs, are PCBs with higher wiring density per unit area. HDI implements the application of [microvias, blind and buried vias], also smaller components (e.g. by implementing [BGA components]).
 
 When designing HDI PCBs, there are several options of board materials you can choose from:
 
 -   FR-4
 
--   PTFE 
+-   PTFE
 
 -   LDPP
 
@@ -159,19 +109,19 @@ When designing HDI PCBs, there are several options of board materials you can ch
 
 -   Other copper or fiber clad plates, or
 
--   A combination of these materials together, i.e., Hybrid PCBs 
+-   A combination of these materials together, i.e., Hybrid PCBs
 
 -   And RCC (Resin Coated Copper)
 
 With a smaller area, HDI PCBs generally have better signal integrity, since stray [inductance] and [capacitance] is reduced. The sizes of HDI PCB's vias are generally smaller than any standard PCB's vias, ranging from around 0.075 mm to a maximum of 0.15 mm.
 
-HDI PCBs are commonly used for PCBs with 
+HDI PCBs are commonly used for PCBs with
 
 -   Numerous devices
 
 -   Small dimension
 
--   Multiple layers 
+-   Multiple layers
 
 -   Many dense high-speed signal traces.
 

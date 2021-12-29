@@ -1,0 +1,54 @@
+---
+title: Impedance
+description: Impedance in electrical circuits is a kind of signal interference that must be controlled to establish a reliable circuit performance
+author: Nadya Lukman
+categories: ["electronics"]
+date: 2022-01-01
+featured: true
+tags: ['',]
+relatedArticles: ['']
+---
+
+Impedance in electrical circuits is a kind of signal interference that must be controlled to establish a reliable circuit performance
+
+In linear working electrical circuits with the same frequency sources, the voltage and current signal throughout the system travel at the same frequency. However, due to the impedance of the circuit, each component (i.e. inductors, capacitors, resistors) has different amplitudes and phases.
+
+Because of this, controlling the impedance of the circuit becomes an essential step to control the data transfer from the source into the end device. Controlling impedance depends on the design of the copper tracks, component and material selection, stackup design, among many other variables.
+
+Impedance is a complex value of current opposition, composed of resistance (real) and reactance (imaginary). Impedance can be regarded as a kind of interference to the signal, which you will generally want to minimize.
+
+Impedance control should always be a priority in designing your circuit board. Impedance directly affects the integrity of the data being transmitted. Since impedance is frequency sensitive, RF (Radio Frequency) applications and high-speed signal transmissions require more attention in this aspect.
+
+## Reactance
+
+In physics, we could say that the reactance is the 'inertia' acting to oppose the flow of electricity. It occurs when the voltage of a working circuit is 90 degrees out-of-phase from the current flowing through it. Reactance is made up of two components: inductance and capacitance.
+
+### Inductance
+
+Inductance, by its name, is an inductive property carried ideally by inductors. It is a component's ability to store energy in the form of a magnetic field. Inductance is a frequency dependent variable, and is directly proportional to the reactance -- and hence, impedance. The correlation between reactance and equation of:  
+
+Z=jωL  where Z is the reactance, ω is the frequency in rad/s, and L is the inductance.
+
+A variant of unwanted inductance is the stray inductance. Stray inductance is the effect of a virtual inductor created by the voltage and current switching of PCB components, which creates a resonant circuit. Stray inductance may cause problems by slowing rise times and increasing power losses.
+
+### Capacitance
+
+Capacitance is a capacitive property carried ideally by capacitors. It is a component's ability to store electrical charge. Capacitance, like inductance, is also a frequency dependent variable, but it's indirectly proportional to the reactance and impedance. The equation for capacitance is:
+
+Z=-j(1/ωC) where Z is the reactance, ω is the frequency in rad/s, and C is the capacitance.
+
+Stray capacitance is the effect of a virtual capacitor created by PCB conductors and their surrounding environment. Stray capacitance can be ignored at low frequencies but contributes to a higher power loss and loss in signal integrity at higher frequencies.
+
+## Controlling Impedance
+
+Like all electrical applications, controlling the impedance of a PCB is one of the core requirements on designing its stackup, tracks, and plays a role in [component selection] as well.
+
+-   Copper traces' line width and thickness.
+
+This could be done by calculating or using a special simulation software.
+
+-   Subtrate's choice of material and thickness.
+
+Since impedance is made up of the inductive and capacitive reactance, the dielectric constant of the used substrate material along with its thickness plays an important role in controlling the general impedance of the PCB.
+
+Despite all these, the working conditions of a PCB, i.e. the operating voltage and current, is not a determining factor for the impedance control system.
