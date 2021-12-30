@@ -38,6 +38,10 @@ module.exports = {
         options: { path: 'src/pages' }
       },
       {
+        resolve: 'gatsby-source-filesystem',
+        options: { path: 'src/images' }
+      },
+      {
         resolve: 'gatsby-transformer-yaml',
         options: { typeName: 'Category', path: 'src/data/categeories' }
       },

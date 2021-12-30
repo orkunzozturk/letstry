@@ -123,9 +123,12 @@ const A = styled('a')`
 //Tables
 const Table = styled('table')`
 border-radius: 5px 5px 0 0;
-overflow:hidden;
+overflow:auto;
 border-collapse: collapse;
-margin: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1rem;
+margin-bottom: 1rem;
 width: 100%;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 font-size: ${(p) => p.theme.typography.body1.fontSize};

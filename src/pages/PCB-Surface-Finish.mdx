@@ -1,0 +1,149 @@
+---
+title: PCB Surface Finish
+description: HASL, OSP, ENIG, ImAg, ImSn, and Hard Gold.
+author: Nadya Lukman
+categories: [""]
+date: 2022-01-01
+featured: true
+tags: ["", "", "", "", ""]
+relatedArticles: ["", ""]
+---
+
+The performance of a circuit board highly depends on the [copper tracks] and [components] which are attached to it. Different manufacturing processes are done, involving different chemicals, treatments, and heat levels, to ensure the well-designed PCBs are able to live up to expectations. The different components are attached with [different soldering methods], while the exposed copper layer has to be covered with a surface finish. Here are the details on what to choose based on your aimed PCB function.
+
+## HASL (Hot Air Solder Leveling)
+
+HASL is the process of generating a PCB coat to prevent damage from oxidation by blowing off solder with hot air.
+
+This process is done in only 2 steps:
+
+1. Coating the surface of the circuit board with lead or tin solder
+2. Removing excess coating by blowing the circuit board with heated compressed air.
+
+✔️ Cheap  
+✔️ Fast process  
+✔️ High mechanical strength  
+✔️ Bright finish
+
+❌ Uneven surface finish (more difficult for welding)
+❌ Not suitable for SMT process, as layer could remelt
+❌ Short circuit tendencies for small components and fine gaps
+❌ Lead is not RoHS compliant, so lead-free tin solder is more commonly used
+
+Since HASL is a cheap, simple and fast process that provides good solderability characteristics, it became the standard surface treatment for [standard PCBs].
+
+## OSP (Organic Solderability Perspective)
+
+Organic Solderability Perspective (OSP) plates circuit boards by using organic compounds which bond over bare copper surfaces.
+
+The process is one of the simplest of all surface coating methods.
+
+1. Cleaning the PCB surface. This is done with:
+
+   - Dry cloth, to remove oils, fingerprints, dust, or other particles
+
+   - Etching, to remove oxides
+   - Acid, to remove ions
+
+2. Applicating OSP solution onto the circuit board. Reactions will take place and create a layer of coating. Rinse and remove the excess solution.
+
+✔️ Cheap
+✔️ Fast production
+✔️ Can be used in conjunction with other technologies
+✔️ Able to withstand further processing
+
+❌ Difficult to inspect
+❌ Sensitive to acid and humidity
+❌ Not applicable when reflow soldering is re-carried out
+❌ Shelf life is only 3 months
+❌ Must be used within 24 hours after opening the package
+
+OSP, unlike nickel, lead, or tin, is not a conducting material. Hence, to test the performance of the PCB (i.e., ICT or In-circuit Test), the OSP layer must be first removed from the test points using solder paste. When this is done, there is a potential that the ICT probes are over-tipped, which might damage the PCB.
+
+Even though the shelf life of OSPs is relatively short, they can easily be reprocessed after their expiration, and are used for **boards undergoing multiple processes**.
+
+## ENIG (Electroless Nickel + Immersion Gold)
+
+ENIG is one of the most commonly used PCB surface finishes. The method uses nickel to act as a diffusion barrier to the copper: soldering is done on the nickel instead of the copper. Then, a layer of gold is applied to protect the nickel from oxidation.
+
+✔️ Long shelf life
+
+✔️ Flat surface output
+
+✔️ Support repeated 2-layer reflow soldering
+
+✔️ High yield rate
+
+✔️ RoHS standard compliant
+
+❌ Relatively more expensive than other methods
+
+❌ Might have **black pads**
+
+❌ Nickel layer might oxidize
+
+❌ Poor soldering strength
+
+❌ Poor signal integrity for RF applications
+
+**Black pad** is a phenomenon caused when the layer of gold corrodes the nickel layer, forming areas with a high phosphorus rate. These black pads are more often found in BGA pads and are caused if the ENIG process wasn't controlled effectively. They will reduce the rate of PCB solderability immensely, which becomes a huge problem in the assembly and testing processes.
+
+ENIG plating thickness of each layer should be between 0.05 to 0.23 µm for the immersion gold layer and 2.5 to 5.0 µm for the electroless nickel. The thicker the immersion gold layer, the more likely it is to result in a black pad due to process complications.
+
+One of the best application of ENIG is for _fine-pitch PCBs_, which includes [HDI PCBs] that has smaller pads, holes, and are more densely packed.
+
+## Immersion Tin (ImSn)
+
+Immersion Tin, like its name, is a chemical process in which the PCB is immersed in tin to allow displacement to take place between the copper and the tin. With this process, a flat surface of 20-40 µin thick is obtained.
+
+✔️ Good solderability
+
+✔️ Gives flat surface
+
+✔️ RoHS compliant
+
+❌ Shorter shelf life than ENIG
+
+❌ Thicker coating than ImAg
+
+Since ImSn coating is done at low temperatures, the coating is often applicated to boards with **temperature-controlled processes, and pin insertion applications**, due to its good solderability properties.
+
+## Immersion Silver (ImAg)
+
+Similarly, the process of immersion silver is done with the basis of displacement between the copper and silver. The process provides thickness almost 4 times less than the Immersion Tin process.
+
+✔️ Thinner coating
+
+✔️ Better solder formation, good for high frequency signal
+
+✔️ RoHS compliant
+
+❌ Slightly more costly than ImSn
+
+❌ Tarnish and oxidize in long-term
+
+Since the ImAg process provides better solder formation than ImSn, it's good for **high frequency operations**.
+
+## Electrolytic Nickel Gold / Hard Gold
+
+Electrolytic Nickel Gold finish is one of the oldest methods of PCB finishes to be used. The technique uses a method of electroplating to first cover the copper surface with nickel, before further layering the nickel with gold finish, to prevent oxidation of both the copper and nickel surfaces.
+
+✔️ High hardness
+
+✔️ Fine coating crystallization
+
+✔️ Robust against wear and tear
+
+❌ Short circuit in high-frequency applications
+
+This process of coating is commonly done only in the fingers or inserting boards (such as RAMs), i.e., in areas where **contact is high**. The friction strength for the gold plating is high, hence it's not easily torn or worn down.
+
+|                            | HASL            | OSP                               | ENIG            | ImSn            | ImAg                      | Hard Gold                            |
+| -------------------------- | --------------- | --------------------------------- | --------------- | --------------- | ------------------------- | ------------------------------------ |
+| Material                   | Lead/Tin solder | Organic solvent                   | Nickel and Gold | Tin             | Silver                    | Nickel and gold                      |
+| Cost                       | $               | $                                 | $$$             | $$              | $$                        | $$$                                  |
+| Complexity                 | Simple          | Simple                            | Complex         | Simple          | Simple                    | Complex                              |
+| Surface                    | Uneven          | Even, but can’t measure thickness | Smooth          | Smooth          | Smooth                    | Can’t be soldered                    |
+| Multiple reflow soldering? | No              | Yes, but damage might occur       | Yes             | Yes             | Yes                       | Yes, but soldering is more difficult |
+| Shelf life                 | 12 months       | 6 months                          | 12 months       | 6 months        | 6 months                  | 9 months                             |
+| Application                | Standard PCBs   | PCB with further processings      | HDI PCBs        | Pin insert PCBs | High frequency operations | Edge connectors                      |
