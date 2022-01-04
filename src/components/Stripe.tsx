@@ -2,7 +2,7 @@ import styled from "../styled";
 
 const Stripe = styled("div")`
   width: 100%;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
   transform: skewY(-8deg);
   -webkit-transform-origin: 0;

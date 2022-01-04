@@ -6,27 +6,27 @@
   slug: mechanical
   description: Designing and manufacturing plastic and metal parts for your product through CNC, 3D Printing & Plastic Injection Molding.
   image: /images/faqs.svg
-- name: Turnkey Assembly
-  slug: turnkey
-  description: Putting everything together, from PCBs to packaging.
-  image: /images/tutorials.svg
-- name: Supply Chain Management
-  slug: scm
-  description: Procuring electronics components and organizing parts delivery.
-  image: /images/tutorials.svg
-- name: Shipping & Packaging
-  slug: shipping-packaging
-  description: Packaging requirements, shipping methods and delivery tracking.
-  image: /images/tutorials.svg 
-- name: Certification & Testing
-  slug: cert-test
-  description: Getting certifaction (RoHS, CE...) and setting up testing for hardware products.
-  image: /images/tutorials.svg 
-- name: Quality Control
-  slug: qc
-  description: Setting up a fool-proof QC methodology for your products.
-  image: /images/tutorials.svg      
-- name: NexPCB Onboarding Process
-  slug: onboarding
-  description: Submitting your project and making your first order.
-  image: /images/tutorials.svg
+# - name: Turnkey Assembly
+#   slug: turnkey
+#   description: Putting everything together, from PCBs to packaging.
+#   image: /images/tutorials.svg
+# - name: Supply Chain Management
+#   slug: scm
+#   description: Procuring electronics components and organizing parts delivery.
+#   image: /images/tutorials.svg
+#- name: Shipping & Packaging
+#  slug: shipping-packaging
+#  description: Packaging requirements, shipping methods and delivery tracking.
+#  image: /images/tutorials.svg 
+#- name: Certification & Testing
+#  slug: cert-test
+#  description: Getting certifaction (RoHS, CE...) and setting up testing for hardware products.
+#  image: /images/tutorials.svg 
+# - name: Quality Control
+#   slug: qc
+#   description: Setting up a fool-proof QC methodology for your products.
+#   image: /images/tutorials.svg      
+# - name: NexPCB Onboarding Process
+#   slug: onboarding
+#   description: Submitting your project and making your first order.
+#   image: /images/tutorials.svg
