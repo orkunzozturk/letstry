@@ -94,10 +94,9 @@ export const SEO = ({
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         <meta httpEquiv="content-language" content={contentLang} />
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" 
+        rel="stylesheet">
+        </link>    
         <meta property="og:site_name" content={siteName} />
         {seo.url && <meta property="og:url" content={seo.url} />}
         {seo.url && <link rel="canonical" href={seo.url} />}

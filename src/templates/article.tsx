@@ -184,10 +184,10 @@ const Code = styled('code')`
 const P = styled(Typography)`
   code {
     display: inline-block;
-    font-family: Consolas, Menlo, Courier, monospace;
     background-color: #f9f9f9;
     padding: ${(p) => p.theme.spacing(1) / 2}px;
     font-size: 0.9em;
+    font-family: Roboto, serif;
   }
 `;
 
@@ -205,15 +205,19 @@ const Blockquote = styled('blockquote')`
 
 const H1 = styled('h1')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: Source Sans Pro, sans-serif;
 `;
 
 const H2 = styled('h2')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: Source Sans Pro, sans-serif;
 `;
 
 const H3 = styled('h3')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: Source Sans Pro, sans-serif;
 `;
+
 
 const mdxComponents = {
   a: A,

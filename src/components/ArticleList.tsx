@@ -35,7 +35,7 @@ const ArticleList: React.FC<{ articles: MdxArticle[] }> = ({ articles }) => {
               {article.frontmatter.title}{" "}
               {article.frontmatter.featured && (
                 <StarIcon
-                  color="#faad14"
+                  color="#f4814a"
                   style={{ position: "relative", top: "5px" }}
                 />
               )}
