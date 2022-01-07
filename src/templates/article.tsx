@@ -164,11 +164,19 @@ border-bottom: 2px solid #2a4387;
 const Ol = styled('ol')`
   font-size: ${(p) => p.theme.typography.body1.fontSize};
   line-height: ${(p) => p.theme.typography.body1.lineHeight};
+  font-family: ${(p) => p.theme.typography.body1.fontFamily};
 `;
 
 const Ul = styled('ul')`
   font-size: ${(p) => p.theme.typography.body1.fontSize};
   line-height: ${(p) => p.theme.typography.body1.lineHeight};
+  font-family: ${(p) => p.theme.typography.body1.fontFamily};
+`;
+
+const Li = styled('li')`
+  font-size: ${(p) => p.theme.typography.body1.fontSize};
+  line-height: ${(p) => p.theme.typography.body1.lineHeight};
+  font-family: ${(p) => p.theme.typography.body1.fontFamily};
 `;
 
 const Code = styled('code')`
@@ -187,7 +195,7 @@ const P = styled(Typography)`
     background-color: #f9f9f9;
     padding: ${(p) => p.theme.spacing(1) / 2}px;
     font-size: 0.9em;
-    font-family: Roboto, serif;
+    font-family: ${(p) => p.theme.typography.body1.fontFamily};
   }
 `;
 
@@ -205,19 +213,33 @@ const Blockquote = styled('blockquote')`
 
 const H1 = styled('h1')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
-  font-family: Source Sans Pro, sans-serif;
-`;
+  font-family: ${(p) => p.theme.typography.h1.fontFamily};
+  `;
 
 const H2 = styled('h2')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: ${(p) => p.theme.typography.h2.fontFamily};
 `;
 
 const H3 = styled('h3')`
   margin-top: ${(p) => p.theme.spacing(6)}px;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: ${(p) => p.theme.typography.h3.fontFamily};
 `;
 
+const H4 = styled('h4')`
+  margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: ${(p) => p.theme.typography.h4.fontFamily};
+`;
+
+const H5 = styled('h5')`
+  margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: ${(p) => p.theme.typography.h5.fontFamily};
+`;
+
+const H6 = styled('h6')`
+  margin-top: ${(p) => p.theme.spacing(6)}px;
+  font-family: ${(p) => p.theme.typography.h6.fontFamily};
+`;
 
 const mdxComponents = {
   a: A,
@@ -225,14 +247,19 @@ const mdxComponents = {
   blockquote: Blockquote,
   ol: Ol,
   ul: Ul,
+  li: Li,
   h1: H1,
   h2: H2,
   h3: H3,
+  h4: H4,
+  h5: H5,
+  h6: H6,
   code: Code,
   td: Td,
   th: Th,
   table: Table,
   tr: Tr
+
 };
 
 export default function ({

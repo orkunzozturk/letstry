@@ -26,13 +26,15 @@ let theme = createMuiTheme({
       fontFamily: 'Source Sans Pro, sans-serif',
       fontWeight: 400,
       fontSize: 20,
-      letterSpacing: 0.3,
+      letterSpacing: 0.15,
     },
     body1: {
-      fontFamily: 'Roboto, serif',
+      fontFamily: 'Roboto, sans-serif',
+      letterSpacing: 0.3,
+      fontWeight: 400,
     },
     subtitle1: {
-    fontFamily: 'Roboto, serif',
+    fontFamily: 'Roboto, sans-serif',
     },
   },
   palette: {
