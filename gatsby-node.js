@@ -48,6 +48,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.sourceNodes = ({ actions }) => {
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
   actions.createTypes(`
     type Category implements Node @dontInfer {
       id: ID!
@@ -59,7 +62,7 @@ exports.sourceNodes = ({ actions }) => {
       image: String!
     }
   `);
-};
+}
 
 exports.createResolvers = ({ createResolvers }, options) => {
   const basePath = options.basePath || DEFAULT_OPTIONS.basePath;
