@@ -138,7 +138,7 @@ const Navigation = ({ basePath }: { basePath: string }) => {
               title={title}
               alt={title}
             />
-            <div style={{ marginLeft: '12px' }}>{logoLabel}</div>
+            <div style={{ marginLeft: '12px', marginTop: '19px', fontFamily: 'Source Sans Pro, sans-serif' }}>{logoLabel}</div>
           </Link>
         </div>
         <div style={{ textAlign: 'center', gridArea: 'center' }}>
@@ -190,12 +190,12 @@ const Navigation = ({ basePath }: { basePath: string }) => {
             href={linkUrl}
             target="_blank"
             rel="noopener"
-            style={{ display: 'inline-block', marginRight: '12px' }}
+            style={{ display: 'inline-block', marginRight: '12px', fontFamily: 'Source Sans Pro, sans-serif' }}
           >
             {linkText}
           </a>
           <a href={ctaButtonUrl} target="_blank" rel="noopener">
-            <CtaButton variant="contained" size={isMobile ? 'small' : 'medium'}>
+            <CtaButton variant="contained" size={isMobile ? 'small' : 'medium'} style={{fontFamily:'Source Sans Pro, sans-serif',}}>
               {ctaButtonText}
             </CtaButton>
           </a>

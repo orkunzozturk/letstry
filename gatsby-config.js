@@ -22,7 +22,7 @@ module.exports = {
     footerText: 'Back to main website',
     footerUrl: 'https://nexpcb.com',
     googleTagManagerId: '',
-    googleAnalyticsMeasurementId: '',
+    googleAnalyticsMeasurementId: 'UA-34430862-1',
     },
     plugins: [
       'gatsby-plugin-typescript',
@@ -56,7 +56,7 @@ module.exports = {
       {
         resolve: "gatsby-plugin-hubspot",
         options: {
-          trackingCode: "1234567",
+          trackingCode: "3027780",
           respectDNT: false,
           productionOnly: true,
         },

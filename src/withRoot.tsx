@@ -16,7 +16,7 @@ const styles = css`
   body {
     margin: 0;
     background-color: #eee;
-    font-family: "Lato", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     overflow-x: hidden;
     color: rgb(14, 28, 43);
   }

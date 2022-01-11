@@ -3,11 +3,38 @@ import { COLORS } from './colors';
 
 let theme = createMuiTheme({
   typography: {
-    fontFamily: 'Lato, sans-serif',
+    fontFamily: 'Source Sans Pro, sans-serif',
+    h1: {
+    fontFamily: 'Source Sans Pro, sans-serif',
+    },
+    h2: {
+      fontFamily: 'Source Sans Pro, sans-serif',
+    },
+    h3: {
+      fontFamily: 'Source Sans Pro, sans-serif',
+    },
+    h4: {
+      fontFamily: 'Source Sans Pro, sans-serif',
+    },
     h5: {
-      fontWeight: 500,
+      fontFamily: 'Source Sans Pro, sans-serif',
+      fontWeight: 400,
       fontSize: 26,
       letterSpacing: 0.5,
+    },
+    h6: {
+      fontFamily: 'Source Sans Pro, sans-serif',
+      fontWeight: 400,
+      fontSize: 20,
+      letterSpacing: 0.15,
+    },
+    body1: {
+      fontFamily: 'Roboto, sans-serif',
+      letterSpacing: 0.3,
+      fontWeight: 400,
+    },
+    subtitle1: {
+    fontFamily: 'Roboto, sans-serif',
     },
   },
   palette: {
