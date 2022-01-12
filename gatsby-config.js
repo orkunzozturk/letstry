@@ -26,8 +26,13 @@ module.exports = {
     },
     plugins: [
       'gatsby-plugin-typescript',
+      'gatsby-remark-slug',
       {
         resolve: 'gatsby-plugin-mdx',
+        options: {
+          gatsbyRemarkPlugins: ['gatsby-remark-slug'
+          ],
+        }
       },
       {
         resolve: 'gatsby-source-filesystem',

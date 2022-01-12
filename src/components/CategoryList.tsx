@@ -7,7 +7,7 @@ import { Category } from '../types/Category';
 const Grid = styled('div')`
   display: grid;
   // set grid columns to 1fr 1fr 1fr once there are 3+ categories
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: ${(p) => p.theme.spacing(3)}px;
   grid-row-gap: ${(p) => p.theme.spacing(4)}px;
 

@@ -24,7 +24,7 @@ const styles = css`
   a {
     outline: 0;
     text-decoration: none;
-    transition: 0.7s;
+    // transition: 0.7s;
     color: inherit;
   }
 `;
