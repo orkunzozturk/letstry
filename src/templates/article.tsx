@@ -10,6 +10,7 @@ import ArticleList from '../components/ArticleList';
 import Layout from '../layouts/ArticleLayout';
 import styled from '../styled';
 import { SEO } from '../components/SEO';
+import TableOfContents from '../components/TableOfContents'
 
 type PageQueryData = {
   mdx: MdxArticle;
@@ -29,6 +30,10 @@ export const pageQuery = graphql`
     mdx(id: { eq: $articleId }) {
       id
       body
+      headings {
+        depth
+        value
+      }
       fields {
         slug
       }
@@ -89,9 +94,9 @@ const RelatedArticlesWrapper = styled('div')`
 `;
 
 const RelatedArticles: React.FC<{ articles: MdxArticle[] }> = ({
-  articles,
+  articles, 
 }) => {
-  return (
+  return (   
     <RelatedArticlesWrapper>
       <Typography variant="h5" component="p" paragraph>
         Related Articles
@@ -312,8 +317,9 @@ export default function ({
             <Typography color="textPrimary">{title}</Typography>
           </Breadcrumbs>
           <h1>{title}</h1>
+          <TableOfContents headings={mdx.headings}/>
           <MDXProvider components={mdxComponents}>
-            <MDXRenderer>{mdx.body}</MDXRenderer>
+            <MDXRenderer headings={mdx.headings}>{mdx.body}</MDXRenderer>
           </MDXProvider>
           {relatedArticles.length > 0 && (
             <>
