@@ -2,10 +2,12 @@
   slug: electronics
   description: How to design and manufacture PCBs? How to select components?
   image: /images/electronics.svg
+  status: production
 - name: Mechanical Parts
   slug: mechanical
   description: Designing and manufacturing plastic and metal parts for your product through CNC, 3D Printing & Plastic Injection Molding.
   image: /images/mechanical.svg
+  status: production
 - name: Turnkey Assembly
   slug: turnkey
   description: Putting everything together, from PCBs to packaging.

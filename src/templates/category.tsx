@@ -83,7 +83,7 @@ export default function ({
             <Typography variant="body1" component="p" paragraph>
               {category.description}
             </Typography>
-            <ArticleList articles={articles} />
+            <ArticleList articles={articles} />           
           </CardContent>
         </Card>
       </div>
