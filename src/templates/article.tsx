@@ -317,7 +317,8 @@ export default function ({
             <Typography color="textPrimary">{title}</Typography>
           </Breadcrumbs>
           <h1>{title}</h1>
-          <TableOfContents headings={mdx.headings}/>
+          {mdx.headings.length > 0 && (
+          <TableOfContents headings={mdx.headings}/> )}
           <MDXProvider components={mdxComponents}>
             <MDXRenderer headings={mdx.headings}>{mdx.body}</MDXRenderer>
           </MDXProvider>

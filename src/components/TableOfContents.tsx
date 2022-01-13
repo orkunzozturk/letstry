@@ -32,7 +32,7 @@ const ToCitem = styled ('li')`
 &:hover {
   outline: 0;
   text-decoration: underline;
-  color: #f4813a;
+  color: #2a4387;
 }
 `
 

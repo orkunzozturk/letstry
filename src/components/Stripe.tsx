@@ -21,15 +21,15 @@ const Stripe = styled("div")`
   }
 
   @media (max-width: 800px) {
-    height: 720px;
+    height: 800px;
   }
 
   @media (max-width: 500px) {
-    height: 730px;
+    height: 800px;
   }
 
   @media (max-width: 400px) {
-    height: 650px;
+    height: 800px;
   }
 `;
 
