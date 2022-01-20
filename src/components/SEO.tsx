@@ -115,7 +115,7 @@ export const SEO = ({
 
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" 
-        rel="stylesheet">
+        rel="stylesheet preload prefetch">
         </link>    
         <meta property="og:site_name" content={siteName} />
         {seo.url && <meta property="og:url" content={seo.url} />}
