@@ -45,64 +45,17 @@ export default ({ headings }) => (
           </Typography >
           <ToCList>
           <Typography color="textSecondary" variant="body1" >
-          <li>
+            <ul>
             {headings
-              .filter(heading => heading.depth == 2)
+              .filter(heading => heading.depth !== 1)
               .map(heading => (
-                
+               
                 <li key={heading.value}>
                           <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
                 </li>
               ))}
-              </li>
-              <ToCList>
-              <li>
-              {headings
-              .filter(heading => heading.depth == 3)
-              .map(heading => (
-                
-                <li key={heading.value}>
-                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
-                </li>
-              ))}
-              </li>
-              <ToCList>
-              <li>
-              {headings
-              .filter(heading => heading.depth == 4)
-              .map(heading => (
-                
-                <li key={heading.value}>
-                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
-                </li>
-              ))}
-              </li>
-              <ToCList>
-              <li>
-              {headings
-              .filter(heading => heading.depth == 5)
-              .map(heading => (
-                
-                <li key={heading.value}>
-                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
-                </li>
-              ))}
-              </li>
-              <ToCList>
-              <li>
-              {headings
-              .filter(heading => heading.depth == 6)
-              .map(heading => (
-                
-                <li key={heading.value}>
-                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
-                </li>
-              ))}
-              </li>
-              </ToCList>
-              </ToCList>
-              </ToCList>
-              </ToCList>
+              
+              </ul>
           </Typography>
           </ToCList>
         </CardContent>

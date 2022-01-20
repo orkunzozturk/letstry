@@ -12,6 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <meta name="google-site-verification" content="obcIb3t5hRLbAjwptkzS6J6B4mzDYixkXGg5dI1NmEk" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

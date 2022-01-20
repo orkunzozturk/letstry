@@ -25,6 +25,7 @@ module.exports = {
     googleAnalyticsMeasurementId: 'UA-34430862-1',
     },
     plugins: [
+      `gatsby-plugin-sitemap`,
       'gatsby-plugin-typescript',
       'gatsby-remark-slug',
       {
