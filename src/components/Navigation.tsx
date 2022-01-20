@@ -135,6 +135,7 @@ const Navigation = ({ basePath }: { basePath: string }) => {
             <img
               src={logoUrl}
               height={isMobile ? '20px' : '30px'}
+              width={isMobile ? '76.094px' : '114.141px'}
               title={title}
               alt={title}
             />

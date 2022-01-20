@@ -33,6 +33,7 @@ const Grid = styled('div')`
 
 const Img = styled('img')`
   height: 180px;
+  width: 180px;
   margin-bottom: ${(p) => p.theme.spacing(4)}px;
 
   @media (max-width: 800px) {
