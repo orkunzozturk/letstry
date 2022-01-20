@@ -94,6 +94,8 @@ export const SEO = ({
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         <meta httpEquiv="content-language" content={contentLang} />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" 
         rel="stylesheet">
         </link>    
