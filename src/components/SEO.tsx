@@ -94,8 +94,26 @@ export const SEO = ({
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         <meta httpEquiv="content-language" content={contentLang} />
+        <link rel="DNS-prefetch" href="https://js.hs-analytics.net"/>
+        <link rel="DNS-prefetch" href="https://js.hs-banner.com"/>
+        <link rel="DNS-prefetch" href="https://www.google-analytics.com"/>
+        <link rel="DNS-prefetch" href="https://js.hsleadflows.net"/>
+        <link rel="DNS-prefetch" href="https://js.hsadspixel.net"/>
+        <link rel="DNS-prefetch" href="https://www.googleadservices.com"/>
+        <link rel="DNS-prefetch" href="https://api.hubapi.com"/>
+        <link rel="DNS-prefetch" href="https://www.googletagmanager.com"/>
+
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://js.hs-analytics.net"/>
+        <link rel="preconnect" href="https://js.hs-banner.com"/>
+        <link rel="preconnect" href="https://www.google-analytics.com"/>
+        <link rel="preconnect" href="https://js.hsleadflows.net"/>
+        <link rel="preconnect" href="https://js.hsadspixel.net"/>
+        <link rel="preconnect" href="https://www.googleadservices.com"/>
+        <link rel="preconnect" href="https://api.hubapi.com"/>
+        <link rel="preconnect" href="https://www.googletagmanager.com"/>
+
+
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" 
         rel="stylesheet">
         </link>    
