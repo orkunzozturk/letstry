@@ -2,7 +2,7 @@
 title: Vias & Holes
 description: Drilled Holes and Vias.
 author: Nadya Lukman
-categories: [""]
+categories: ["electronics"]
 date: 2022-01-01
 featured: false
 tags: ["", "", "", "", ""]
@@ -13,7 +13,7 @@ In PCB Design, the connection between the board and components, or the connectio
 
 ## Through Holes
 
-Through holes are commonly used as [THT component] inserts. NexPCB supports 2 ways of creating through holes:
+Through holes are commonly used as [THT component](/articles/Package-Types-Soldering/#through-hole-technology) inserts. NexPCB supports 2 ways of creating through holes:
 
 - Mechanical drilling
 
@@ -57,37 +57,37 @@ There are a set of rules to be followed when designing vias:
 
 Based on how they are organized, vias can be differentiated into 3 types:
 
-#### Through hole via
+#### Through hole Via
 
 These are used to connect tracks on opposite sides of the PCB (i.e. top to bottom).
 
-![](https://lh6.googleusercontent.com/uQ9A_axHhETDS2xZd5mOsz4nycQI35p-QwF0WcNRu4UC1hfMUWAIK7IDodLaNuX98IX-7qKRVl0pmfcSSMdNOPEI4GQ3kshO_2_cSLkQOsDxBtqHZHqtBbvsq6iUkn34uzfxSQDY)
+![Through Hole Via](images/vias-holes-01.png)
 
-#### Blind via
+#### Blind Via
 
 In multilayer PCBs, a blind via is commonly used to connect a pad on one end (i.e. top or bottom layer) to an internal layer of the PCB. Hence, it's only visible on one side of the PCB. These connections are usually established to maintain signal integrity and reduce the parasitic capacitance of the PCB.
 
 An ideal blind via must have a minimum of 1:1 ratio between the via depth and diameter.
 
-![](https://lh4.googleusercontent.com/Kw6buaVDlv2c9Xk625d_qA37ZaM4Ahq--2X9rjnUYlLYNxAO_MsDHKbpJm9Tw-jUTA7rwp7WU0Dwr4iJM-C6OKt6pfJ1fVy7zDFN2ZV5BawSrST9zxGL6cqxsRJutbwlJOfMvMUU)
+![Blind Via](images/vias-holes-02.png)
 
-#### Buried via 
+#### Buried Via 
 
 Buried vias are via connections established between the internal layers of a multilayered PCB. Hence, they are not visible on the whole PCB setup as there are no connections to the outer layers.
 
-![](https://lh6.googleusercontent.com/3TwvLLubbSQnQCNUW3gtv5BXW5biWz_FkGTWfPdBtCJZHXKFovXVe8WwjJuNzf3xrSPdjj9frQmk1EtcEQdYj4L_CzpV8HZ1rZIhSLBnYtkf08mGYBU0dZ1rnYGMm-LfKaplyYa9)
+![Buried Via](images/vias-holes-03.png)
 
 Note: blind via on the right, buried in the middle
 
 ### Special Vias
 
-#### Via-in-pads
+#### Via-in-Pads
 
 Via-in-pads are literally vias created on pads. These vias are excellent for reducing inductance and saving space. They have good thermal dissipation, and don't need any plugging or sealing. However, creating via-in-pads is a rather complicated process, and is more costly than regular via processing.
 
 #### Microvias
 
-Microvias, are small vias that are usually created with a laser and done before the lamination process. In [HDI PCBs], microvias are typically used to allow denser placement of components. They typically have a 1:1 diameter to depth ratio, and hence are formed in a stacked or staggered configuration.
+Microvias, are small vias that are usually created with a laser and done before the lamination process. In [HDI PCBs](/articles/PCB-Types/#hdi-pcbs), microvias are typically used to allow denser placement of components. They typically have a 1:1 diameter to depth ratio, and hence are formed in a stacked or staggered configuration.
 
 [PICTURE SHOWING STACKED VS STAGGERED]
 
@@ -99,13 +99,14 @@ The stacked configuration occurs when 2 microvias are vertically stacked above e
 
 In staggered configuration, the microvia are not directly stacked on top of each other -- rather staggered. These vias require separate drilling and are glued only after the etching process.
 
-One of the problems caused by these configurations is the generation of EMC radiation. This radiation is caused by the change in the characteristic impedance of the board, due to the short stubs created on the layer where the vias aren't routed. ![](https://lh4.googleusercontent.com/FpAryWbefeEo30vQrJJ_G12FKsEqTpFEMzfg439LIECRf07tshH_8yZ9SGhSIgY8WrRN0oY61q2M8oqgibg80Ij6HkQKSVPox_0fJtHPx6tcr6Aa_r1ecLTuXHkZloafNW4FUyMD)
+One of the problems caused by these configurations is the generation of EMC radiation. This radiation is caused by the change in the characteristic impedance of the board, due to the short stubs created on the layer where the vias aren't routed. !  
+![Staggered Configuration](images/vias-holes-04.png)
 
-#### Thermal vias
+#### Thermal Vias
 
 Another type of vias is the thermal via. Thermal vias are holes that are located under surface-mounted heat-generating components on a PCB. Thermal vias could be of any type: through-hole, in-pad, or microvias. Applicating these thermal vias reduces the thermal resistance of the system.
 
-#### Tented vias
+#### Tented Vias
 
 Tented vias are generally vias or holes which are covered with a layer of solder paste to reduce the unevenness of the surface. If left unattended, this unevenness could lead to poor SMT processing, and result in changes in the impedance of the circuit board.
 
@@ -169,7 +170,7 @@ The process of via filling is broken down into several steps:
 
 Using resin plugging to secure vias is a simple and cheap solution, but the heat expansion occurring during the process might cause blisters in the copper layers. To prevent this, the excess resin must first be removed to achieve a flat surface before the etching process.
 
-Resin plugging is most commonly done to vias in [HDI circuit boards], where many via-in-pads are used.
+Resin plugging is most commonly done to vias in [HDI circuit boards](/articles/PCB-Types/#hdi-pcbs), where many via-in-pads are used.
 
 #### Via Filling: Copper Plating
 

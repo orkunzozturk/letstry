@@ -51,7 +51,9 @@ export default ({ headings }) => (
               .map(heading => (
                
                 <li key={heading.value}>
-                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>{heading.value}</Link></ToCMenu>
+                          <ToCMenu><Link to={'#' + slugger.slug(heading.value)}>
+                            
+                            {heading.value}</Link></ToCMenu>
                 </li>
               ))}
               

@@ -28,11 +28,22 @@ module.exports = {
       `gatsby-plugin-sitemap`,
       'gatsby-plugin-typescript',
       'gatsby-remark-slug',
+      'gatsby-remark-images',
+      'gatsby-plugin-sharp',
       {
         resolve: 'gatsby-plugin-mdx',
         options: {
-          gatsbyRemarkPlugins: ['gatsby-remark-slug'
-          ],
+          gatsbyRemarkPlugins: ['gatsby-remark-slug',
+          {resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 1035,
+            sizeByPixelDensity: true,
+            withWebp: true,
+            linkImagesToOriginal: false,
+            loading: "eager",
+          },
+          }
+        ],
         }
       },
       {
@@ -42,10 +53,6 @@ module.exports = {
       {
         resolve: 'gatsby-source-filesystem',
         options: { path: 'src/pages' }
-      },
-      {
-        resolve: 'gatsby-source-filesystem',
-        options: { path: 'src/images' }
       },
       {
         resolve: 'gatsby-transformer-yaml',

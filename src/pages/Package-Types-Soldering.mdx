@@ -14,7 +14,7 @@ There are 2 general methods of placing components onto a PCB: **THT** and **SMT*
 Incorporating the technologies into your board requires different types of components. These components are differentiated by their packages - that is, how they are represented. DIP, BGA, QFP, and QFN are several package types to choose from, depending on your choice of placement technology.
 
 ## Through-Hole Technology
-
+![THT Component](/images/package-types-soldering-01.png)
 THT or Through-Hole Technology mounts PCB components by inserting their lead throughout the PCB's holes and soldering it on the other end of the PCB. The components used are unique, they all have 2 or more pins attached to their body, which are longer than the PCB's thickness (typically 1.2 mm).
 
 ### Advantages of using THT:
@@ -40,9 +40,8 @@ The Through-Hole Technology implements one main package: The **DIP (Dual In-line
 The package refers to components which are housed with either molded plastic or ceramic, with long parallel leg-like leads emerging from its sides. These leg-like leads, or pins, are inserted into the drilled holes on a PCB to be mounted.
 
 In simpler components such as resistors and inductors, the package has only two leads. These leads are arranged in either an axial or a radial manner.
-[Picture of THT and SMT Resistors compared]
 
-In axial packages, the lead emerges from two alternate sides of the device. In radial packages, the lead emerges from the same side of the device.
+In axial packages, the lead emerges from two alternate sides of the component. In radial packages, the lead emerges from the same side of the component.
 
 In order to bond these THT components into the board, **wave soldering** method is used. Wave or flow soldering is the process of securing THT components onto the board by passing a preheated PCB with THT inserts through a pool of solder. The solder will cool down and create a bond between the leads of the THT component and the bottom pad of the PCB.
 
@@ -145,7 +144,9 @@ A pad is a small surface of copper in a printed circuit board that allows solder
 
 There are 3 types of commonly used pads based on the technology package used:
 
-1. Through-Hole Pads [for THT package]. Through-hole pads are intended for introducing the pins of the components, so they can be soldered from the opposite side from which the component was inserted. These types of pads are very similar to a through-hole via. These pads can be either plated or non-plated.
+1. Through-Hole Pads.  
+
+Through-hole pads are intended for introducing the pins of the components, so they can be soldered from the opposite side from which the component was inserted. These types of pads are very similar to a through-hole via. These pads can be either plated or non-plated.
 
 The structure of through-hole pads can be called the pad stack, which consists of:
 
@@ -161,7 +162,9 @@ The structure of through-hole pads can be called the pad stack, which consists o
 
 - Pin number
 
-2.  Surface Mount Pads [for SMD package]. These are used for soldering the SMT components such as capacitors and inductors on the same surface as it was placed.
+2.  Surface Mount Pads.  
+
+These are used for soldering the SMT components such as capacitors and inductors on the same surface as it was placed.
 
 Surface mount pads are simpler than through-hole pads, consisting of:
 

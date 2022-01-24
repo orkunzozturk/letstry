@@ -6,7 +6,7 @@ categories: ["electronics"]
 date: 2022-01-01
 featured: true
 tags: ["", "", "", "", ""]
-relatedArticles: ["", ""]
+relatedArticles: ["Impedance", ""]
 ---
 
 Since components are essentialy what make a circuit, it's extremely important to choose your components carefully, to ensure your circuit is to work according to what it aims. After selecting these components, the choice of your components and their peripheral information should be carefully documented in a BOM for your PCB manufacturing and assembly process to begin.
@@ -15,7 +15,7 @@ Since components are essentialy what make a circuit, it's extremely important to
 
 Passive components are components that influence the flow of electricity running through them. They store energy and produce inductance, but don't necessarily amplify or control the signals themselves.
 
-Passive components in circuits are commonly used to store and dissipate energy. They are also commonly used as transducers, which are responsible to convert electrical energy into another type of energy, or vice versa. Passive devices are the main devices that affect [PCB impedance], especially resistors, capacitors, and inductors, each of which has two other parasitic impedances besides intrinsic impedance.
+Passive components in circuits are commonly used to store and dissipate energy. They are also commonly used as transducers, which are responsible to convert electrical energy into another type of energy, or vice versa. Passive components are the main components that affect [Impedance](/articles/Impedance/), especially resistors, capacitors, and inductors, each of which has two other parasitic impedances besides intrinsic impedance.
 
 ### Resistors
 
@@ -26,6 +26,7 @@ In lower frequencies, resistors contribute to the circuit's resistance only.
 In higher frequencies, resistors will also contribute to the circuit's impedance through parasitic capacitance. In the region of these high frequencies, the total impedance will decrease, but the resistor will act as a capacitor.
 
 When the operating frequency is higher, the resistor will alter, and act as an inductor -- i.e., contributing to the circuit inductance, and hence increasing the general circuit impedance.
+![Resistor Impedance](images/components-01.png)
 
 ### Capacitors
 
@@ -43,7 +44,7 @@ The basic working principle of a capacitor is to store energy, so it can be used
 
 Although capacitors are used to store energy, the simplified equivalent circuit of a capacitor is a series connection of a resistor and an inductor. Hence, the capacitor has inductive reactance and will appear inductive on a certain frequency value.
 
-[Frequency characteristics graph]
+![Frequency Characteristics of Capacitors](images/components-02.png)
 
 ### Inductors
 
@@ -53,7 +54,7 @@ As the stacks and coils of inductors are similar to having multiple capacitors i
 
 The frequency characteristics of an inductor is represented in an inverted V shape. When operating in low frequencies, it shows an inductive characteristic. However, when the operating frequency is higher than the resonant frequency, it becomes capacitive, which then lowers the general impedance of the circuit.
 
-[Frequency characteristics graph]
+![Frequency Characteristics of Inductors](images/components-03.png)
 
 ## Active Components
 
@@ -93,7 +94,7 @@ Since a diode has polarity, where it only allows current to flow through from it
 
 To indicate the polarity, you should first **silkscreen print the diode schematic symbol between the 2 pads**. Another symbol, **a silkscreen thread should be added on the cathode side of the diode, to indicate the polarity.**
 
-[silkscreen pic with polarity indication]
+![Silkscreen Polarity Markings](images/components-06.png)
 
 ### Transistors
 
@@ -117,15 +118,14 @@ There are 2 main package types of transistors,
 
 During operation, transistors often heat up. Therefore, they require heat sinks for their thermal management. Different types of heat sinks: metal case with fins, thermal grease, or any specially designed heat sink will work
 
-For SMDs (Surface Mount Devices), a large area of ​​copper should be laid in the body part, preferably connected to the GND plane, functioning as a thermal pad for heat dissipation. For THT components, it is generally possible to parallel several devices on the same physical heat sink.
+For SMDs (Surface Mount Devices), a large area of ​​copper should be laid in the body part, preferably connected to the GND plane, functioning as a thermal pad for heat dissipation. For THT components, it is generally possible to parallel several components on the same physical heat sink.
 
 ### Thyristors
 
 Thyristors are 4 layered semiconductors with alternating P and N materials. They are commonly used to control the flow of current, acting as a conditional switch.
 
 The alternating 4 P and N layers provide thyristors with 3 junctions, with alternating polarity. To enable the flow of current from the anode to the cathode or vice versa, the polarity of the middle junction must be triggered by a signal. The middle junction is also known as the gate of the thyristor.
-
-[Thyristor Sign]
+![Thyristor Symbol](images/components-04.png)
 
 Thyristors have 3 methods of operations.
 
@@ -149,9 +149,10 @@ SCR is also known as thyristor rectifier. The SCR is the basic structure of a th
 
 - TRIAC (Triode for alternating current)
 
-[TRIAC Symbol]
-
 TRIAC provides control of both halves of the alternating current, hence power is used more efficiently. However, due to its non-symmetrical configuration, TRIACs are more commonly used in lower power applications, such as light dimmers, electric fan speed controls, and small motor controllers.
+
+![TRIAC Symbol](images/components-05.png)
+
 
 - DIAC (Diode for alternating current)
 
