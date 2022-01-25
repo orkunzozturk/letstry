@@ -21,7 +21,7 @@ module.exports = {
     headline: '(Almost) Everything you need to launch Hardware Products',
     footerText: 'Back to main website',
     footerUrl: 'https://nexpcb.com',
-    googleTagManagerId: '',
+    googleTagManagerId: 'G-RWWCPMVYZJ',
     googleAnalyticsMeasurementId: 'G-RWWCPMVYZJ',
     },
     plugins: [
