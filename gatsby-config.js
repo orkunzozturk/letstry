@@ -22,7 +22,7 @@ module.exports = {
     footerText: 'Back to main website',
     footerUrl: 'https://nexpcb.com',
     googleTagManagerId: '',
-    googleAnalyticsMeasurementId: 'UA-34430862-1',
+    googleAnalyticsMeasurementId: 'G-RWWCPMVYZJ',
     },
     plugins: [
       `gatsby-plugin-sitemap`,
