@@ -150,7 +150,6 @@ export const SEO = ({
         {googleAnalyticsMeasurementId && (
           <script>{injectGoogleAnalytics(googleAnalyticsMeasurementId)}</script>
         )} */}
-        {/* <!-- Global site tag (gtag.js) - Google Analytics -->
       </Helmet>
       <CustomHead />
     </>
