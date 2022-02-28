@@ -42,7 +42,7 @@ Your slots should be indicated as a part of the device package and should be ind
 
 When designing multi-layered PCBs, the stackup rules must be heavily taken into account. In [stackup design](/articles/Stackup-Design/), the use of copper layers is always followed by an insulating layer, and optionally an adhesive or laminating layer. The configuration of these copper layers is however different based on their placements. They can be categorized as the inner and outer layers of the PCB.
 
-[Add a picture on stackup design here that has silkscreen, solder mask via, pad, hole, substrate, prepreg, copper and ground planes]
+![Stackup Design](/images/stackup.png)
 
 The outer layers are the ones that are exposed to the outside. That's where you see pads, vias, the solder mask (usually green) and a silkscreen print layer where information about the design of the PCB is presented. There will also be a surface finish layer in the exposed copper layers to keep it safe.
 
@@ -53,11 +53,34 @@ The ground plane is an important part of designing a multilayered PCB, but is no
 Generally, the copper layers are defined as layers with etched copper on them. On these layers, pads and plated holes are configured. These are designed with the EDA software, where a circular diameter is plotted on the top or bottom plate, and a hole is generated with the same center point. Non-plated holes don't need any copper on the top or bottom layers, since they don't need to be conductive.
 
 
+## Lamination
+----------
+
+The laminating process refers to the process of binding the different PCB layers together, in order to protect and add strength to the different materials used.
+
+The most commonly used laminate materials are made up of fiberglass or other reinforcing materials impregnated with resin. The materials are usually covered and hot-pressed with copper foil. The choice of materials is as follows:
+
+-   FR4
+
+-   High TG FR4
+
+-   Rogers
+
+-   Taconic
+
+-   Arlon
+
+-   Nelco
+
+This laminating process (i.e. the addition of fiberglass) to the board does not have a significant effect on the PCB thickness. The greatest factor of the PCB's thickness is only the process of the glue application. An overflow will cause a significant thickness change to the overall PCB size.
+
+
 ## Solder mask
 
 A solder mask is a finish or varnish layer applied to prevent short circuits in between different nets due to solder placement, also to prevent oxidization of copper tracks in the PCB.
 
 Designing your solder mask layer can be done directly on the [EDA software](/articles/PCB-Software-File-Type/), paying special attention to the negative film. Usually, the solder mask layer is the green layer covering the PCB, but other colors, such as yellow, black, blue, red, white, purple, and matte green are also available to choose from.
+
 
 ## Silkscreen
 
@@ -90,23 +113,3 @@ The process of silkscreen printing is usually done according to these rules:
 
 -   The writing or symbol should not be covered by any component
 
-Lamination
-----------
-
-The laminating process refers to the process of binding the different PCB layers together, in order to protect and add strength to the different materials used.
-
-The most commonly used laminate materials are made up of fiberglass or other reinforcing materials impregnated with resin. The materials are usually covered and hot-pressed with copper foil. The choice of materials is as follows:
-
--   FR4
-
--   High TG FR4
-
--   Rogers
-
--   Taconic
-
--   Arlon
-
--   Nelco
-
-This laminating process (i.e. the addition of fiberglass) to the board does not have a significant effect on the PCB thickness. The greatest factor of the PCB's thickness is only the process of the glue application. An overflow will cause a significant thickness change to the overall PCB size.

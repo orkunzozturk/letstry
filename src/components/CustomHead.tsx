@@ -4,5 +4,6 @@ import { Helmet } from 'react-helmet';
 
 export const CustomHead = () => (
   <Helmet>{
+    
     }</Helmet>
 );
