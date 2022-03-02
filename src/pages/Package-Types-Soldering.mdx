@@ -19,21 +19,16 @@ THT or Through-Hole Technology mounts PCB components by inserting their lead thr
 
 ### Advantages of using THT:
 
-- More mechanical stability and robust
-
-- Easier for small-batch productions where soldering must be done by hand.
-
+- More mechanical stability and robust  
+- Easier for small-batch productions where soldering must be done by hand.  
 - Components are easier to remove or resolder. Heating up the PCB board and removing the solder without damaging the PCB nor the component is possible with a solder wick.
 
 ### Disadvantages of using THT:
 
-- Mechanical holes must be first established by drilling, which is expensive and time-consuming.
-
-- If there are too many through holes on a board, routing within that board will be difficult.
-
-- The components used are larger, with legs that take up space.
-
-- Soldering by hand is more time-consuming and inconsistent.
+- Mechanical holes must be first established by drilling, which is expensive and time-consuming.  
+- If there are too many through holes on a board, routing within that board will be difficult.  
+- The components used are larger, with legs that take up space.  
+- Soldering by hand is more time-consuming and inconsistent.  
 
 The Through-Hole Technology implements one main package: The **DIP (Dual In-line Package)**.
 
@@ -49,8 +44,7 @@ When dealing with small batches or more complex designs, **hand soldering** is o
 
 ### Common Use Cases of THT:
 
-- Require high mechanical strength, such as vibration, collision, and extrusion
-
+- Require high mechanical strength, such as vibration, collision, and extrusion  
 - Need to adapt to harsh environments, such as high temperature and high pressure.
 
 ## Surface Mount Technology
@@ -59,61 +53,47 @@ SMT or Surface Mount Technology is a modern circuit board assembly technology, w
 
 ### Advantages of using SMT:
 
-- It fits more components within a smaller PCB area
-
-- Cheaper manufacturing costs for batch production.
-
-- Faster production process.
-
+- It fits more components within a smaller PCB area  
+- Cheaper manufacturing costs for batch production.  
+- Faster production process.  
 - Precise soldering position.
 
 ### Disadvantages of using SMT:
 
-- Higher chance for components to fall off the board after continuous use.
+- Higher chance for components to fall off the board after continuous use.  
+- Not suitable for environments with high temperatures, as they might damage the device-board connection.  
 
-- Not suitable for environments with high temperatures, as they might damage the device-board connection.
 
 The Surface Mount Technology is further developed into several categories:
 
-- SOT (Small Outline Transistor)
-
-- SOP (System-on-Package), SMDs with pins emerging from two of its sides. This includes the application of **SOICs**
-
-- QFJ (Quad Flat J-Leaded), plastic SMDs that have leads emerging from all its sides.
-
-- QFN (Quad Flat No-Lead), SMDs with hidden leads (not emerging) in all of its sides. They're more space-efficient than QFJs and QFPs.
-
-- QFP (Quad Flat Package), SMDs with leads emerging from all of its sides. There are more variations for QFP devices than QFNs or QFJs.
-
-- BGA (Ball Gate Array), SMDs which are ball-shaped.
-
-- Chip Carrier or commonly known as Chips.
-
+- SOT (Small Outline Transistor)  
+- SOP (System-on-Package), SMDs with pins emerging from two of its sides. This includes the application of **SOICs**  
+- QFJ (Quad Flat J-Leaded), plastic SMDs that have leads emerging from all its sides.  
+- QFN (Quad Flat No-Lead), SMDs with hidden leads (not emerging) in all of its sides. They're more space-efficient than QFJs and QFPs.  
+- QFP (Quad Flat Package), SMDs with leads emerging from all of its sides. There are more variations for QFP devices than QFNs or QFJs.  
+- BGA (Ball Gate Array), SMDs which are ball-shaped.  
+- Chip Carrier or commonly known as Chips.  
 - SOIC (Small Outline Integrated Circuit)
 
 One of the most common technologies implemented with SMT is the SOIC, or Small Outline Integrated Circuit. SOIC is generally used for devices with simple functions or discrete devices, such as transistors, logic devices, and small ICs. The technology typically has a few pins which are distributed on the components' two sides. Other than the SMT's reflow solder process, securing SOICs are also done by applying red glue into the components.
 
 ### Common Use Cases of SMT
 
-- Needs to be produced rapidly
-
-- Use dense PCBs, i.e., more components within a smaller area
-
-- Work in a stationary or stable environment that does not require high mechanical strength.
+- Needs to be produced rapidly  
+- Use dense PCBs, i.e., more components within a smaller area  
+- Work in a stationary or stable environment that does not require high mechanical strength.  
 
 SMT devices can be attached to the PCBs in a fast automated method with the **reflow soldering** process. Reflow soldering is using solder paste to stick SMT components onto the PCB pads, before having the whole setup heated up to create a permanent bond.
-
+  
 ## Mixed Technology
 
 The Mixed Technology incorporates both of THT and SMT in one board, aiming to take the specialties of both.
 
 ### Different Mixed PCB Configurations
 
-- **Single-sided Mixed Assembly.** Uses both SMT and THT on one side of the PCB only.
-
-- **Double-sided Mixed Assembly.** Combined SMT and THT on both sides of the PCB.
-
-- **Split Mixed Assembly.** Have one side only for SMT components, and the other side only for THT components.
+- **Single-sided Mixed Assembly.** Uses both SMT and THT on one side of the PCB only.  
+- **Double-sided Mixed Assembly.** Combined SMT and THT on both sides of the PCB.  
+- **Split Mixed Assembly.** Have one side only for SMT components, and the other side only for THT components.  
 
 Incorporating both technologies gives the product a mixed advantage of both SMT and THT services. The embedded THT technique gives the PCB a **more robust** property than regular SMTs. On the other hand, SMT supports more components within the small area, giving a **denser working area** than regular THTs. The choice of components used are **also wider**.
 
@@ -121,9 +101,8 @@ However, implementing 2 technologies require multiple types of soldering. With s
 
 ### Common Use Cases of Mixed PCBs
 
-- Some connectors, connecting wires, or TO devices in the design are not packaged
-
-- Need to use through-hole devices or structural parts to enhance mechanical performance or fixation
+- Some connectors, connecting wires, or TO devices in the design are not packaged  
+- Need to use through-hole devices or structural parts to enhance mechanical performance or fixation  
 
 These Mixed PCBs are commonly used in LED lighting products, server boards, video processing applications, communication hardware, sensor boards, IoT hardware, industrial controller assemblies, smartphone accessories, or CPUs.
 
@@ -144,36 +123,31 @@ A pad is a small surface of copper in a printed circuit board that allows solder
 
 There are 3 types of commonly used pads based on the technology package used:
 
-1. Through-Hole Pads.  
+1. **Through-Hole Pads**  
 
 Through-hole pads are intended for introducing the pins of the components, so they can be soldered from the opposite side from which the component was inserted. These types of pads are very similar to a through-hole via. These pads can be either plated or non-plated.
 
 The structure of through-hole pads can be called the pad stack, which consists of:
 
-- Top pad
-
-- Bottom pad
-
-- Inner pad
-
-- Drill
-
-- Annular ring
-
+- Top pad  
+- Bottom pad  
+- Inner pad  
+- Drill  
+- Annular ring  
 - Pin number
 
-2.  Surface Mount Pads.  
+2.  **Surface Mount Pads**  
 
 These are used for soldering the SMT components such as capacitors and inductors on the same surface as it was placed.
 
 Surface mount pads are simpler than through-hole pads, consisting of:
 
-- Copper area (in rectangular, oblong, or circular shape)
-- Solder mask
-- Solder paste
-- Pad number labels on the silkscreen
+- Copper area (in rectangular, oblong, or circular shape)  
+- Solder mask  
+- Solder paste  
+- Pad number labels on the silkscreen  
 
-3.  BGA (Ball Grid Array) Pads. These are a type of SMD pads, which are specifically used in BGA technology. There are 2 types of BGA pads, depending on the solder mask configuration:  Non-solder mask defined (NSMD), and solder mask defined (SMD).
+3.  **BGA (Ball Grid Array) Pads** These are a type of SMD pads, which are specifically used in BGA technology. There are 2 types of BGA pads, depending on the solder mask configuration:  Non-solder mask defined (NSMD), and solder mask defined (SMD).
 
 ## Solder stencil
 
@@ -183,18 +157,14 @@ The solder paste used is made up of a mixture of solder powder and flux. The sol
 
 Solder paste serves several functions, which includes:
 
-1.  Provide connection between the components' pins to the board's pads, creating a closed circuit.
-
-2.  Binding the components onto the board.
-
-3.  Reduce copper oxidation caused by reflow or wave soldering processes.
+1.  Provide connection between the components' pins to the board's pads, creating a closed circuit.  
+2.  Binding the components onto the board.  
+3.  Reduce copper oxidation caused by reflow or wave soldering processes.  
 
 The procedure of designing solder stencils are as follows,
 
-- The design of stencil is usually automatically configured by the EDA software.
-
-- The thickness generally requires the ratio of the window area to the sidewall area to be greater than or equal to 0.66.
-
-- Unless for special circumstances, you can generally design pads with a pad to window ratio of 1:1.
+- The design of stencil is usually automatically configured by the EDA software.  
+- The thickness generally requires the ratio of the window area to the sidewall area to be greater than or equal to 0.66.  
+- Unless for special circumstances, you can generally design pads with a pad to window ratio of 1:1.  
 
 The process of solder stenciling is done by either chemical corrosion, laser cutting, or a combination of laser cutting with electropolishing.
