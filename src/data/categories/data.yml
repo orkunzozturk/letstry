@@ -20,13 +20,13 @@
   slug: shipping-packaging
   description: Packaging requirements, shipping methods and delivery tracking.
   image: /images/shipping-packaging.svg   
-- name: Certification & Testing
-  slug: cert-test
-  description: Getting certifaction (RoHS, CE...) and setting up testing for hardware products.
+- name: Certification
+  slug: certification
+  description: Getting certifaction (RoHS, CE...)
   image: /images/cert-test.svg  
-- name: Quality Control
-  slug: qc
-  description: Setting up a fool-proof QC methodology for your products.
+- name: Quality Control & Testing
+  slug: qc-testing
+  description: Making sure your customers receive high quality products.
   image: /images/qc.svg      
 - name: NexPCB Onboarding Process
   slug: onboarding
