@@ -8,7 +8,7 @@
   description: Designing and manufacturing plastic and metal parts for your product through CNC, 3D Printing & Plastic Injection Molding.
   image: /images/mechanical.svg
   status: production
-- name: Turnkey Assembly
+- name: Turnkey Box Build Assembly
   slug: turnkey
   description: Putting everything together, from PCBs to packaging.
   image: /images/turnkey.svg
