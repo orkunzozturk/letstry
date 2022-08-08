@@ -19,7 +19,34 @@ Through holes are commonly used as [THT component](/articles/Package-Types-Solde
 
 - Laser drilling
 
-Drilled through-holes are differentiated into 2 types: Plated Through Hole (PTH) and Non-Plated Through Hole (NPTH)
+Drilled through-holes are differentiated into 2 types: Plated Through Hole (PTH) and Non-Plated Through Hole (NPTH). 
+
+
+**Designing Through Holes**
+There are several things to consider when designing through holes: 
+
+- The design of through hole needs to meet the requirement that the hole diameter to the panel thickness ratio should be greater than 1/6. 
+
+![Distance between holes](images/vias-holes-05.png)
+
+- The distance between hole plates is: A ≥ 20mil. 
+
+- The distance between hole plate and copper foil is: B ≥ 20mil, C ≥ 20mil. 
+
+- The minimum distance between PTH and hole to outline is the distance that can ensure the distance from the bonding pad to the hole to outline is: D ≥ 20mil. 
+
+- The recommended minimum distance between NPTH and hole to outline is E ≥ 40mil.
+
+![Hole location from pad](images/vias-holes-06.png)
+
+- The through holes cannot be designed on a bonding pad, and should be connected by a short printed line. 
+
+- The minimum distance between a hole wall and a bonding pad is 0.2 mm. 
+
+- There should be no through holes in the extending outward 1.5 mm area of the contacting part of devices metal shell and PCB.
+
+![Incorrect positioning of holes in between pads](images/vias-holes-07.png)
+- Through holes cannot be located between two bonding pads meant for one component's placement. 
 
 ### Plated Through Holes (PTH)
 
@@ -57,13 +84,13 @@ There are a set of rules to be followed when designing vias:
 
 Based on how they are organized, vias can be differentiated into 3 types:
 
-#### Through hole Via
+**Through hole Via**
 
 These are used to connect tracks on opposite sides of the PCB (i.e. top to bottom).
 
 ![Through Hole Via](images/vias-holes-01.png)
 
-#### Blind Via
+**Blind Via**
 
 In multilayer PCBs, a blind via is commonly used to connect a pad on one end (i.e. top or bottom layer) to an internal layer of the PCB. Hence, it's only visible on one side of the PCB. These connections are usually established to maintain signal integrity and reduce the parasitic capacitance of the PCB.
 
@@ -71,7 +98,7 @@ An ideal blind via must have a minimum of 1:1 ratio between the via depth and di
 
 ![Blind Via](images/vias-holes-02.png)
 
-#### Buried Via 
+**Buried Via** 
 
 Buried vias are via connections established between the internal layers of a multilayered PCB. Hence, they are not visible on the whole PCB setup as there are no connections to the outer layers.
 
@@ -81,31 +108,31 @@ Note: blind via on the right, buried in the middle
 
 ### Special Vias
 
-#### Via-in-Pads
+**Via-in-Pads**
 
 Via-in-pads are literally vias created on pads. These vias are excellent for reducing inductance and saving space. They have good thermal dissipation, and don't need any plugging or sealing. However, creating via-in-pads is a rather complicated process, and is more costly than regular via processing.
 
-#### Microvias
+**Microvias**
 
 Microvias, are small vias that are usually created with a laser and done before the lamination process. In [HDI PCBs](/articles/PCB-Types/#hdi-pcbs), microvias are typically used to allow denser placement of components. They typically have a 1:1 diameter to depth ratio, and hence are formed in a stacked or staggered configuration.
 
 ![Stacked vs Staggered Vias](/images/vias-holes-04.png)
 
-##### Stacked Configuration
+- ***Stacked Configuration***
 
 The stacked configuration occurs when 2 microvias are vertically stacked above each other. These holes should first be drilled separately, before being aligned with an adhesive.
 
-##### Staggered Configuration
+- ***Staggered Configuration***
 
-In staggered configuration, the microvia are not directly stacked on top of each other -- rather staggered. These vias require separate drilling and are glued only after the etching process.
+In staggered configuration, the microvia are not directly stacked on top of each other -- rather staggered. These vias require separate drilling and are glued only after the etching process. 
 
 One of the problems caused by these configurations is the generation of EMC radiation. This radiation is caused by the change in the characteristic impedance of the board, due to the short stubs created on the layer where the vias aren't routed. !  
 
-#### Thermal Vias
+**Thermal Vias**
 
 Another type of vias is the thermal via. Thermal vias are holes that are located under surface-mounted heat-generating components on a PCB. Thermal vias could be of any type: through-hole, in-pad, or microvias. Applicating these thermal vias reduces the thermal resistance of the system.
 
-#### Tented Vias
+**Tented Vias**
 
 Tented vias are generally vias or holes which are covered with a layer of solder paste to reduce the unevenness of the surface. If left unattended, this unevenness could lead to poor SMT processing, and result in changes in the impedance of the circuit board.
 
@@ -113,11 +140,11 @@ Tented vias are generally vias or holes which are covered with a layer of solder
 
 There are 2 main ways to generate holes and vias:
 
-#### Mechanical Drilling
+**Mechanical Drilling**
 
 The mechanical drilling process is a straightforward process. It uses a drill bit to drill the required depth to form a hole in the board.
 
-#### Laser Drilling
+**Laser Drilling**
 
 This method uses either CO2 or YAG UV laser. The process is done by:
 
@@ -127,7 +154,8 @@ This method uses either CO2 or YAG UV laser. The process is done by:
 
 Copper doesn't absorb this infrared light and hence is not affected.
 
-3.  The board heats up and melts, forming holes.
+3.  The board heats up and melts, forming holes. 
+
 
 ### Vias Filling
 
@@ -143,13 +171,13 @@ There are 3 main processes used by NexPCB to fill vias:
 
 3.  Via Filling (by copper plating)
 
-#### Via Sealing: Solder Resist
+**Via Sealing: Solder Resist**
 
 Solder resist is the most common via sealing material. The method is done by running the solder resist ink across the top and bottom layers of the PCB.
 
 Using solder resist to seal vias is the simplest and most cost-effective way to complete the task. However, the finish of this process might still be uneven, and could still impact the board's impedance.
 
-#### Via Plugging: Resin
+**Via Plugging: Resin**
 
 Vias are plugged with resin, or specific via plugging materials to create an even surface for mounting. The process initially heats the plugged hole to harden the resin, before grinding the excess resin to create a smooth surface. .
 
@@ -171,7 +199,7 @@ Using resin plugging to secure vias is a simple and cheap solution, but the heat
 
 Resin plugging is most commonly done to vias in [HDI circuit boards](/articles/PCB-Types/#hdi-pcbs), where many via-in-pads are used.
 
-#### Via Filling: Copper Plating
+**Via Filling: Copper Plating**
 
 In order to fill the void on the via holes, the copper plating process can further be extended to fill the hole gaps completely with copper. The process will allow the vias to be electrically conductive and have better heat dissipation by adding layers of copper through the electroplating process.
 
@@ -183,4 +211,4 @@ However, the copper plating process is a complex process, which takes up more ti
 | Cons | Surface might still be uneven | Might cause copper blisters | Time consuming Complex process Expensive             |
 | Uses | General usage                 | Via-in-pad                  | Microvia                                             |
 
-[Show the differences between filling plugging etc like the one below in a picture]
+
