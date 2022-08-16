@@ -1,5 +1,5 @@
 ---
-label: Test
+label: Default Article Information
 hide_body: false
 fields:
 - type: text
