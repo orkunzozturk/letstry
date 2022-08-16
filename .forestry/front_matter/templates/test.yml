@@ -26,3 +26,5 @@ fields:
 - type: list
   name: relatedArticles
   label: relatedArticles
+pages:
+- src/pages/test.mdx
