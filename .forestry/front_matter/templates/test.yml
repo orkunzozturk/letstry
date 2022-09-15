@@ -28,4 +28,3 @@ fields:
   label: relatedArticles
 pages:
 - src/pages/emc-and-emi-compliance.mdx
-- src/pages/pcb-cad-aperture-file-types.mdx
