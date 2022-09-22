@@ -28,3 +28,4 @@ fields:
   label: relatedArticles
 pages:
 - src/pages/emc-and-emi-compliance.mdx
+- src/pages/warehouse-parts-for-assembly.mdx
