@@ -1,0 +1,87 @@
+---
+title: In-circuit Testing (ICT) for Electrical Testing
+description: 'Introduction to in-circuit testing, a method to test the electrical
+  performance of a PCB. '
+author: Jacen Wang
+categories:
+- qc-testing
+date: 2022-10-23T16:00:00Z
+featured: false
+tags:
+- qc-testing
+relatedArticles: []
+
+---
+While creating PCB assemblies, or PCBA, it’s crucial to examine the short circuits, open circuits, pseudo-soldering, polarity, mislocation, and missing installation of components, and evaluate any logic failure in the device before turning on its power. This prevents burning the product when turned on. Troubleshooting and fault analysis will also be minimized.
+
+When dealing with SMT, testing also happens at several points.
+
+* Before the reflowing process, **manual inspection** will take place.
+* After the SMT is complete, an **AOI inspection** will be done.
+* Finally, **X-Ray** through sampling inspection.
+
+The first two processes generally only see problems with mislocation, missing components, or warping issues.
+
+Problems such as short circuits and pseudo-soldering can only be detected using X-Rays. However, using X-Rays takes too much time, and it’s not very viable for mass production – it can’t be done to all of the products. The process is too tedious. Hence, the demand for In-Circuit Testing ICT) arises.
+
+##   
+How Does ICT Work?
+
+What is ICT? ICT or In-Circuit Test is a method of inspecting manufacturing defects through the electrical connectivity of components on PCBA.
+
+![ICT in-circuit testing circuit](https://lh5.googleusercontent.com/Wjruutd4g-zTQ_4Pwc2NE3Qw5VnqGrTgYYIK5ENJmjcvaDYz7MmWGWcijEtbXcDVzVwjVuZhHIT1UI_TZx3PVqQHt2Uh0DrXKxi3o1AwahfCFERLvHV6_Gy7Ufi6P-SdOGA9NlrHBY972Ybi6XwUfTndW3fDaaZpcNP4F2l1ZuATQZZuEQGSTDmL0vqT =650x106)  
+The figure above shows a pin (usually a pop pin) in contact with the ICT system at both the input and output ends of the target to be tested. The ICT system implements the working principle of **operational amplifiers.** It measures the **resistance, capacitance, or inductance** by controlling the **voltage, current,** and **signal sources.** By putting on different excitation signals, the feedback resistance (or impedance) can be calculated to test the circuit’s performance.
+
+The ICT testing can test both passive devices and chip pins to determine the effectiveness of internal logic.
+
+## Parts of ICT
+
+From the figure, we can also see that the ICT system is composed of three parts
+
+1. **Testing system**:
+
+The system workflow is made up of numerous drivers and sensors. These drivers are mostly op-amps, PWM controllers, and measurement devices. The sensors are mostly probes, such as direct-contact probes, or switches, such as capacitively coupled sensors.
+
+2. **Fixture**:
+
+Since there are various shapes and structures of PCBs, the amount and positioning of contact probes should be designed accordingly. These probes should be connected to a fixture, so the corresponding pin can fully match the target when the fixture is pressed down.
+
+_Note:_ In addition to ICT, there is actually another method of testing known as the Flying Probe Tester. The flying probe tester is used to test the open and short circuits of bare PCBs. Unlike ICT, it doesn’t require any fixture. Instead, it uses pin needles serially by moving a robot arm.
+
+3. **Software**:
+
+Different testing sequences and targets need different software. This software will then arrange the probes, sequence, and threshold to be used for the testing.
+
+## Advantages and Disadvantages of ICT
+
+One major advantage of ICT testing is that it can **detect manufacturing defects** in large batches. As long as the testing points and software are well designed, **almost all failures, including the logic functions** of the boards, can be tested with **high efficiency**. It enables **quick detection of faulty points**. Hence, ICT is generally used for **mass-produced products.**
+
+  
+However, operating an ICT also doesn’t start off very easily. First, it **requires special instruments**. Specific fixtures and software also need to be designed. The process of **changing fixtures and software is done for every product and for every version**. This is quite a tedious process. It leads to rising costs and trouble in maintenance and management. ICT **costs too much time and money for production in small batches**.
+
+  
+The expense for ICT varies depending on the type and complexity of the product, but it’s estimated to account for more than 20% of the processing cost. The average cost can be reduced only in mass production.
+
+In the conventional production process, small probability failures are difficult to be covered with ordinary testing methods. It will increase a lot of manual testing costs and is unreliable if they are to be covered. Clients need to understand the risks and investments here, as well as the widely used means, for a judgment.
+
+The design phase is completed, accounting for around 5% of the design time.
+
+Since PCBs are becoming much more integrated, some **high-density boards have almost no room for testing points.** Even with very little space, designing a testing point requires more work. This being said, adding testing points will also **disturb the signal integrity** of the PCB layout. Thus the use of ICT is narrowed to specific functions.
+
+##   
+The Future of ICT
+
+So where is the ICT heading? To increase the implementation of ICT, we should create a more generalized approach. This can be done by:
+
+* Reducing hardware customization
+* Standardizing software and testing case used
+* Similar to black-box testing in software, the logic input and logic output should be compared to test their logic function. By standardizing these tests, the testing purpose of MTBF can be achieved.
+
+  
+A boundary scan may be an option, and the most typical solution for a boundary scan is **_JTAG EDGE SCAN_**. It works by simulating ICT hardware parts using specific software. The system tests one input and one output point to judge the connection logic on the path.
+
+One benefit is that it provides a **pure software solution**. However, the test circuit still needs to be designed in a special scheme that limits the board functions. Despite this, ICs are continuously developed to be more integrated. This means, more chips will embed highly integrated peripheral passive devices, so the application of a _boundary scan_ will certainly increase.
+
+During the production process of NexPCB, the bare PCB will be tested by a flying probe to eliminate the wiring disconnection problem of the PCB. Visual inspection, AOI and X-RAY inspection will be carried out for SMT, to eliminate the prominent issues of pseudo welding and short circuit caused by production processing.
+
+ICT tests on PCBA are also continuously tested to support each customer’s need for the testing. A reasonable testing plan will be adopted according to the needs of customers, so as to save costs while retaining quality.
