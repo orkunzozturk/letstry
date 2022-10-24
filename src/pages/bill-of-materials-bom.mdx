@@ -1,0 +1,81 @@
+---
+title: Bill of Materials (BOM)
+description: ''
+author: Sam Xu
+categories: []
+date: 2022-10-23T16:00:00Z
+featured: false
+tags:
+- scm
+relatedArticles:
+- articles/assembly-types-and-levels/
+
+---
+Bill of Materials (BOM for short) is an important document of MRP, which is used by almost all management departments. It is used to record in detail all lower-level materials and related attributes used in a project, that is, their dependency level, unit consumption, and other assembly, parts, and components information. In some systems, it is called a _material list_ or _formula list_.
+
+  
+In order to conduct material sourcing correctly based on the quantity required and estimate the time taken to source in the ERP system, an accurate and complete BOM should be provided to reflect the amount and relationship between the subassemblies and their components. Among all of the documents needed for production, BOM has the most significant impact on the project and hence its accuracy requirement is quite high.
+
+The BOM document should include the following information:
+
+* The hierarchy/level
+* Material code
+* Name
+* Specification
+* UoM
+* Quantity yield
+* Source type (self-made, purchased, or outsourced)
+* Lead time (cumulative lead time)
+* Validity period (effective period/expiration period).
+
+The BOM file list has a hierarchical structure. It displays the number of sub-items (quantity of each part and component) needed to complete each level of the product.
+
+##   
+Uses of BOM
+
+The bill of materials is an indispensable and important document for:
+
+* Receiving customer orders
+* Selecting assembly
+* Calculating the cumulative lead time
+* Preparing production and purchase plans
+* Material choice support
+* Logistics
+* Tracking progress
+* Calculating costs and changing cost design.
+
+  
+The tasks stated above involve the sales, project management, production, procurement, product design, and engineering departments of a company. Therefore, the BOM is not only a technical document but also a management document. It is the link to contact and communicate with all departments. All departments of the enterprise need to use the BOM.
+
+##   
+Types of BOM
+
+BOM is very important in the manufacturing industry. It is a guide for products from design to final product shipment. There are many kinds of BOMs in different stages. In the design stage, they are called _design BOMs,_ or _D BOMs_ for short. In the prototyping stage, it is called the _engineering BOM,_ or _E BOM_ for short. In the phase of mass production, the _production BOM_ is called _P BOM_ for short.
+
+  
+During this stage (where prototyping moves into mass production), the process engineer will design a production plan based on the _E BOM._ The information about a product’s processing requirements from the BOM and the company’s factory capacity will be used to create the plan.
+
+  
+_P BOM_ is used for workflow design and production management. With it, you can clearly understand the manufacturing relationship between parts, and track how parts are manufactured, where they are manufactured, by whom, with what tools, and other information.
+
+### What is the difference between _D BOM_, _E BOM_, and _P BOM_?
+
+_D BOM_ is needed to give a direct solution to the customer's requirements. _E BOM_ gets more specific on the solution, giving a background check and conducting tests. The _P BOM_ stands last in line. _P BOM_ states a more detailed solution to solve the problems at different BOM levels and for various reasons.
+
+  
+For example, during the design process of a product, for aesthetics, the brand logo requires a metal nameplate to be placed across the structure. At first, the _D BOM_ states that a double-sided adhesive or glue is required for bonding. After several considerations, engineers found that a 3M double-sided adhesive tape could achieve the required criteria, so they bought a roll of 3M adhesive tape. They then test the material for the product. The experimental results satisfy the initial requirement, and the specific type (model and size) of tape is then added to the BOM.
+
+Since what’s stated in the BOM was only a roll of 3M adhesive tape, the production requires a process of cutting the roll of tape into smaller pieces. However, when this process was done, the whole production was slowed down. There’s a bottleneck in the station.
+
+When this occurs, the process engineer goes back to the procurement engineer to request some pre-cut 3M tapes. The procurement engineer then contacts the supplier, and samples are sent. The supplier then states that a roll of tape can be cut into 10000 pieces. The process engineer then changes the BOM.
+
+The _E BOM_ is changed to state that the required material is some precut pieces of tape, not a roll of tape. The MPQ and MOQ are also changed to 10000 pcs.
+
+##   
+BOM Hierarchy Levels
+
+Another important concept in BOM is the BOM hierarchy, which represents the product’s structure. The concept and understanding of the BOM hierarchy definitions will define the project’s difficulty, standards, and management efficiency of ERP.
+
+The amount of BOM hierarchy levels must be adequate. Defining the BOM into too many or too few levels will affect the actual manufacturing efficiency and complexity. The relationship between assemblies, parts, and parent components is formed in each level of BOM. The more hierarchy levels a product has, the more complex it’ll become. However, if the hierarchy is made up of very few levels, the BOM won’t be able to display clearly the relationship between the components to make up the product structure.
+
+Other than the different BOM types and BOM hierarchy, you should also understand the importance of BOM accuracy. Issues may arise due to the BOM accuracy. A BOM’s accuracy should be paid high attention to, as it doesn’t only relate to the conformity of the final products, but it also contributes to the accuracy of the final cost statistics.

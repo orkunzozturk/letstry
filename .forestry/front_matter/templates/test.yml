@@ -27,6 +27,7 @@ fields:
   name: relatedArticles
   label: relatedArticles
 pages:
+- src/pages/bill-of-materials-bom.mdx
 - src/pages/emc-and-emi-compliance.mdx
 - src/pages/financial-planning-for-scm.mdx
 - src/pages/non-conformance-control-and-management.mdx
