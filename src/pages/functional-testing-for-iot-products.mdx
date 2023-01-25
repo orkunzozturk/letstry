@@ -1,0 +1,75 @@
+---
+title: Functional Testing for IoT Products
+description: 'Functional Testing for IoT products: which parts to test, what tools
+  to use, and the each methods and objectives. '
+author: Jacen Wang
+categories: []
+date: 2022-10-18T16:00:00Z
+featured: false
+tags:
+- ee
+relatedArticles:
+- ''
+
+---
+Functional testing is a method of assessment to test if the features and performance of a product meet the required functional standards. These standards are measured based on the product’s features, operation descriptions, and user solutions.
+
+Functional tests can be divided into two broad categories, **hardware functional testing,** and **software functional testing**. The two differ in terms of objectives, tools, and methods.
+
+> An IoT product is made up of a combination of hardware and software.
+
+We’ll first discuss the hardware functional testing of IoT products.
+
+From its definition, the process of hardware testing in an IoT product should start by getting the **product features (specifications), operation descriptions (function descriptions),** and **user solutions (logical frameworks).**
+
+  
+As a trusted manufacturing and development partner for novel IoT products, NexPCB has an extensive background in handling IoT products.
+
+An IoT product generally has a feature of **wired or wireless network functions**, followed by a **master control** part with capabilities of **computing or storage** and often an **energy supply** part such as power supply and batteries, and there usually will be some **manipulation structure** such as keys and switches, or interfaces, and some additional display, LED, speakers, and other display units, as well as sensors and other information input units. All these are a bit similar to the peripheral configuration of a computer, and below we will have a brief discussion on them.
+
+###   
+1\. Network Functional Testing
+
+1. Wired network tests are one of the most conventional methods of functional testing. The assessment is done by connecting a network cable to the LAN switch, then using frequently-used network tools or ping commands on the computer.
+2. Wireless networks then require different tools and methods depending on the category of wireless technology
+
+* Wifi requires a Wifi router.
+* Bluetooth needs to use a mobile phone app or the Bluetooth testing tool on the computer.
+* The most common method for cellular communication is access points. If a product doesn’t have a display or operation interface, and no local network is present, it’s usually tested comprehensively using the analog base station mode.
+* Lora, ZigBee, NB-IOT, and other wireless methods need the corresponding gateway and server configured to test their connections.
+
+### 2. Master Control
+
+Any installed tools and methods in an IoT product's firmware are usually determined by the designer in the design phase. These will be stated in a _guide/manual._ 
+
+However, even for the processors with the same ARM architecture and same kernel, the tools used vary widely based on manufacturers and design solutions. So, we usually need a master control system to download various tools, programs, and testing software. We also often need to make a customized download or testing device for the needs of mass production.
+
+### 3. Power Supply
+
+1. If the product comes with an **adapter**: functional testing, related certification, and reliability testing shall be arranged for the adapter.
+2. If the product carries a **battery**: the single-cell testing shall be carried out by a battery tester. After passing the test, it is assembled into the whole machine for a complete charge-discharge and operating mode test. Meanwhile, attention shall be paid to heat generation, power consumption, etc.
+3. The power supply of the **mainboard** usually adopts a unit sampling test to verify if the module performance indicators of the power supply of the mainboard meet the design requirements.
+
+### 4. Manipulation and Display
+
+1. Testing the operational capabilities of any **button, touch input, remote control, and interface** test is considered relatively simpler functional testing. These are usually done using the aid of a checklist, according to the devices or any logical frameworks. 
+   * The functional testing of **interfaces** needs to check if the device can **adapt** to various interface components. The **connectivity** of the whole device will also be measured through the test.
+2. The functional testing for the **LED, display, sound, and other functions used to prompt users** is also relatively simple but relies more on manual work, so it is necessary to consider how to reduce extensive human omissions during the process. **Video recording **in the workplace is usually adopted.
+
+5. **Sensors**
+
+As sensors are another core module of IOT products, the functional implementation of the sensor is the **most important requirement**, followed by the general need for **calibration**.
+
+There are so many kinds of sensors, which may be of completely different technical categories, such as optics and chemistry, so different tools and solutions need to be selected depending on the type of sensor.
+
+Some sensors with strong independence, that are connected through the interface and can be separately tested, generally use the separation method for component-level calibration and testing, while most units still need to be tested by displaying or uploading data to the terminal.
+
+Some analog sensors may need to be calibrated, usually with **physical measurement**, and some auxiliary instruments (tensile meters, light meters, etc.) or materials (chemicals) may need to be prepared.
+
+Combining calibration and functional testing is usually a rather difficult task for designers to do when designing architecture. A complete set of testing systems often needs to be created for products with multiple sensors.
+
+While the manufacturing process of IoT products is becoming more and more automated, the gap between the production time and the testing time widens. **_Less time is spent on manufacturing, and more time is spent on testing_** the product (this doesn't include software testing, which tends to be more time-consuming).
+
+> With the advent of the new era of data, the functions of products are more and more complex. **NexPCB always aims to deliver products with the highest quality, fastest speed, and lowest possible cost.** 
+
+To equip with functional testing requirements, we have prepared a massive deal of equipment and mastered various software and hardware tools. Recently, we obtained battery testers and various types of instruments, designed and made fixtures for downloading and testing, wrote software tools, built laboratories, cooperated with external suppliers for specific testing, and many more.
