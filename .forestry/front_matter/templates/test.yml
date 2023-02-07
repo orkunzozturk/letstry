@@ -28,6 +28,7 @@ fields:
   label: relatedArticles
 pages:
 - src/pages/bill-of-materials-bom.mdx
+- src/pages/ce.mdx
 - src/pages/emc-and-emi-compliance.mdx
 - src/pages/fcc.mdx
 - src/pages/financial-planning-for-scm.mdx
