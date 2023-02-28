@@ -27,6 +27,7 @@ fields:
   name: relatedArticles
   label: relatedArticles
 pages:
+- src/pages/bill-of-landing.mdx
 - src/pages/bill-of-materials-bom.mdx
 - src/pages/ce.mdx
 - src/pages/emc-and-emi-compliance.mdx
