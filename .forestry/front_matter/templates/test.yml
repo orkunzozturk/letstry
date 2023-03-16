@@ -47,5 +47,6 @@ pages:
 - src/pages/product-lifecycle.mdx
 - src/pages/quality-assurance-qa.mdx
 - src/pages/sourcing-strategy.mdx
+- src/pages/test.mdx
 - src/pages/warehouse-parts-for-assembly.mdx
 - src/pages/warehousing.mdx
