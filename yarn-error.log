@@ -1,0 +1,75 @@
+Arguments: 
+  /home/mosi/.nvm/versions/node/v18.15.0/bin/node /home/mosi/.yarn/bin/yarn.js install
+
+PATH: 
+  /home/mosi/.nvm/versions/node/v18.15.0/bin:/home/mosi/.yarn/bin:/home/mosi/.config/yarn/global/node_modules/.bin:./bin:./node_modules/.bin:/home/mosi/.rbenv/shims:/home/mosi/.rbenv/bin:/home/mosi/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Zulu/zulu-17/bin/:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Numerical Innovations/ACE3000V8_64/bin:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/MATLAB Runtime/v98/runtime/win64:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/Tencent/微信web开发者工具/dll:/mnt/c/Ruby31-x64/bin:/mnt/c/Users/Corona/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Corona/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Corona/AppData/Roaming/npm:/mnt/c/Users/Corona/.dotnet/tools:/mnt/c/Users/Corona/AppData/Local/GitHubDesktop/bin:/mnt/d/Program Files (x86)/Insta360Stitcher/tools/proStitcher:/usr/local/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: C027D2F74E7F0000:error:0A000119:SSL routines:ssl3_get_record:decryption failed or bad record mac:../deps/openssl/openssl/ssl/record/ssl3_record.c:614:
+
+npm manifest: 
+  {
+    "name": "@mlent/gatsby-theme-help-center",
+    "version": "1.1.0",
+    "license": "MIT",
+    "scripts": {
+      "build": "gatsby build",
+      "clean": "gatsby clean",
+      "develop": "gatsby develop"
+    },
+    "peerDependencies": {
+      "gatsby": "^4.4.0",
+      "react": "^16.14.0",
+      "react-dom": "^16.11.0",
+      "typescript": "^3.6.4"
+    },
+    "devDependencies": {
+      "@types/react": "^16.14.21",
+      "@types/react-dom": "^16.9.14",
+      "@types/react-helmet": "^5.0.19",
+      "gatsby": "^4.4.0",
+      "react": "^16.14.0",
+      "react-dom": "^16.11.0",
+      "typescript": "^3.6.4"
+    },
+    "dependencies": {
+      "@emotion/core": "^10.3.1",
+      "@emotion/styled": "^10.3.0",
+      "@material-ui/core": "^4.5.2",
+      "@material-ui/lab": "^4.0.0-alpha.33",
+      "@mdx-js/mdx": "^1.0.1",
+      "@mdx-js/react": "^1.5.1",
+      "emotion": "^10.0.27",
+      "emotion-theming": "^10.3.0",
+      "gatsby-plugin-emotion": "^7.4.0",
+      "gatsby-plugin-hubspot": "^2.0.0",
+      "gatsby-plugin-material-ui": "^4.1.0",
+      "gatsby-plugin-mdx": "^3.4.0",
+      "gatsby-plugin-react-helmet": "^5.4.0",
+      "gatsby-plugin-sharp": "^4.5.2",
+      "gatsby-plugin-sitemap": "^5.5.0",
+      "gatsby-plugin-typescript": "^4.4.0",
+      "gatsby-remark-images": "^6.5.2",
+      "gatsby-remark-slug": "^0.1.0",
+      "gatsby-source-filesystem": "^4.5.2",
+      "gatsby-source-hubspot-forms": "^3.0.1",
+      "gatsby-transformer-yaml": "^4.4.0",
+      "react-feather": "^2.0.3",
+      "react-helmet": "^5.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
