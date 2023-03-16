@@ -38,6 +38,7 @@ pages:
 - src/pages/incoming-quality-control-iqc.mdx
 - src/pages/innovation-consulting.mdx
 - src/pages/invoicing.mdx
+- src/pages/lifecycle-management.mdx
 - src/pages/new-product-introduction-npi.mdx
 - src/pages/new-technology-introduction-nti.mdx
 - src/pages/non-conformance-control-and-management.mdx
