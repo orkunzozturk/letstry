@@ -45,6 +45,7 @@ pages:
 - src/pages/non-conformance-control-and-management.mdx
 - src/pages/nsf.mdx
 - src/pages/packaging-design.mdx
+- src/pages/pcb-stencil.mdx
 - src/pages/product-lifecycle.mdx
 - src/pages/quality-assurance-qa.mdx
 - src/pages/sourcing-strategy.mdx
