@@ -1,38 +1,50 @@
 ---
 title: Firmware Configuration and Software Installation
-description: ''
-author: ''
-categories: []
+description: Both firmware and software are an important part of the production design
+  process. Factors such as efficiency, functionality, and simplicity need to be fully
+  considered.
+author: Stan Luo
+categories:
+- turnkey
 date: 
 featured: false
-tags: []
+tags:
+- turnkey
 relatedArticles: []
 
 ---
-Since the market for new tech is continuously expanding, the demand for electronic products has also been increasing. This means software developments for electronic products are also becoming more and more important. It's one of the most crucial steps in the production of electronic products, and is indispensable. 
+Since the market for new tech is continuously expanding, the demand for electronic products has also been increasing. This means software developments for electronic products are also becoming more and more important. It's one of the most crucial steps in the production of electronic products, and is indispensable.
 
-The rapid development of electronic technology has led to the emergence of various types of controllers (MCUs) on the market, followed by the emergence of various programming software and test software to adapt to the development of different controllers. At the same time, different products and different applications have different firmware needs to be configured. This not only brings difficulty to the front-end developers but also brings a daunting challenge to the back-end production testing.
+The rapid development of electronic technology has led to the emergence of various types of **controllers (MCUs)** on the market, followed by the emergence of various **programming software and test software** to adapt to the development of different controllers. 
 
-firmware configuration
+At the same time, different products and different applications have **different firmware** needs to be configured. This not only brings difficulty to the front-end developers but also brings a daunting challenge to the back-end production testing.
 
-The so-called firmware (Firmware) is the program written in EPROM or EEPROM, and the popular understanding is "solidified software". To put it more simply, Firmware is BIOS software, but it is completely different from ordinary software. It is the program code solidified inside the integrated circuit, which is responsible for controlling and coordinating the functions of the integrated circuit.
+ 
 
-Firmware refers to the device "driver" stored inside the device. Through firmware, the operating system can realize the operation of a specific machine according to the standard device driver. For example, CD-ROM drives and recorders all have internal firmware.
+## Firmware Configuration
 
-Firmware acts as the software for the most basic and bottom-level work of a system. In hardware devices, firmware is the soul of hardware devices, because some hardware devices have no other software components except firmware, so firmware also determines the function and performance of hardware devices.
+The so-called **Firmware** is the program written in **EPROM** or **EEPROM**, and the popular understanding is **"solidified software"**. To put it more simply, Firmware is **BIOS** software, but it is completely different from ordinary software. It is the program code solidified inside the integrated circuit, which is responsible for **controlling and coordinating the functions of the integrated circuit**.
 
-Through the above definition and description of firmware, we have clearly understood the importance of firmware, so when designing and manufacturing products, the configuration of firmware is particularly important. We need to build firmware very rigorously and carefully. It is true that there are many devices that can upgrade firmware, but there are still many devices that, once used, will never have the opportunity to change.
+Firmware refers to the device "driver" stored inside the device. Through firmware, the **operating system can realize the operation of a specific machine according to the standard device driver**. For example, CD-ROM drives and recorders all have internal firmware.
 
-At the same time, designers should consider the ease of firmware download to reduce the difficulty and complexity of production. In the products that NEXPCB has served in the past, we always negotiate with customers and suggest that customers modify and improve the process and operation mode of configuring/downloading firmware, so as to make the products easy to produce and test, and speed up the time of product landing.
+Firmware acts as the software for the most basic and bottom-level work of a system. In hardware devices, **firmware is the soul of hardware devices**, because some hardware devices have no other software components except firmware, so firmware also determines the function and performance of hardware devices.
 
-Software Installation
+This being said the configuration of firmware should be a crucial point when designing and manufacturing products. Firmware needs to be built very precisely and carefully. Sure, a lot of devices now allow some kind of firmware upgrade, but there are still many devices that, once used, could only run with that particular version of the firmware. 
 
-Whenever we do product development, we always encounter different software that needs to be installed at various stages of product development. In product design, we need different IDEs to program and debug the microcontroller. During product testing, we need various software to download code. to verify our functionality. However, various IDEs also bring huge challenges to production.
+At the same time, designers should consider the **ease of firmware download to reduce the difficulty and complexity of production**. In the products that NexPCB has served in the past, we always negotiate with customers and suggest that customers modify and improve the process and operation mode of configuring/downloading firmware, to make the production and testing easier, and speed up the time of product launch. 
 
-We always tend to popular and universal IDEs for development verification and functional testing. This is conducive to our accurate positioning of unknown problems, rather than being unable to locate the key points of the problem due to ignorance of the software.
+ 
 
-Summarize
+## Software Installation
 
-Both firmware and software are an important part of the production design process. Factors such as efficiency, functionality, and simplicity need to be fully considered.
+Whenever we do product development, we always encounter different software that needs to be installed at various stages of product development. 
 
-NEXPCB is committed to optimizing the manufacturability of products and accelerating product realization. Constantly seek the best solution in terms of firmware configuration and software installation. Help customers save time in product development and verification.
+In product design, we need **different IDEs** to program and debug the microcontroller. During product testing, we need various software to download code to verify our functionality. However, various IDEs also bring huge challenges to production.
+
+We always lean towards using universal and accessible IDEs for development verification and functional testing. This helps us to identify unknown problems easily since niche IDEs tend to have limited resources. 
+
+ 
+
+ 
+
+NexPCB is committed to optimizing the manufacturability of products and accelerating product realization. We are constantly seeking the best solution for firmware configuration and software installation. Assuring that the time needed in product development and verification process can be spent as efficient as possible. 
