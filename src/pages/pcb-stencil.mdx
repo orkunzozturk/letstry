@@ -1,6 +1,7 @@
 ---
 title: PCB Stencil
-description: ''
+description: Stencils are the 'mold' for soldermask placements on to PCBs. How to
+  design and handle these stencils for different PCBs?
 author: Jacen Wang
 categories:
 - electronics
@@ -23,11 +24,11 @@ In actual design, there are more factors affecting solder paste printing, such a
 
 1. **Types of solder paste**
 
-   Leaded solder paste is more fluid than lead-free solder paste. Hence, using leaded solder paste will generally shrink the printed pad pattern. Most companies nowadays use **lead-free solder paste**, in which the **mesh-to-pad ratio are 1:1**. (i.e., it's assumed there's no solder paste shrinkage).
-2. **The particle size of solder paste**
+   Leaded solder paste is more fluid than lead-free solder paste. Hence, using leaded solder paste will generally shrink the printed pad pattern. Most companies nowadays use **lead-free solder paste**, in which the **mesh-to-pad ratio is 1:1**. (i.e., it's assumed there's no solder paste shrinkage).
+2. **Solder paste particle size**
 
    Solder paste comes in different sizes. When solder paste with larger particle sizes is used for narrow meshes or thin stencils, the amount of solder placed may not be sufficient. Therefore, smaller solder paste particles are usually required for small areas and thin stencils.
-3. **Geometry of opening side walls**
+3. **Geometry of mesh walls**
 
    Irregular geometric shapes, especially sharp angles, will increase the risk of the solder paste coming out patchy. When the printed solder paste is not smooth, the soldering process becomes harder and the components will fall off easily. Therefore, some smaller-sized package pads will be designed as arc pads and rectangular small-sized pads are chamfered or elongated.
 4. **Stencil mesh wall smoothness**
