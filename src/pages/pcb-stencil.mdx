@@ -51,7 +51,17 @@ As mentioned before, the IPC-7525A stencil design guide can't always be used as 
 2. **QFP with grounded thermal pad**
 
    The QFP with ground thermal pad is a special package. A QFP is made up of numerous surrounding pins around it, the pins will form a lever state with the middle ground thermal pad. The thickness of the solder to be placed might vary for every component.   
-   The speed of heat dissipation is also a crucial point to be taken into account. QFP packages will generally shrink in a grid or a stepped steel mesh should be designed according to the requirements of the specification.
+   The speed of heat dissipation is also a crucial point to be taken into account. QFP packages will generally shrink in a grid or a stepped steel mesh should be designed according to the requirements of the specification.  
+   ![](/images/pcb-stencil-03.png)
 3. **Large size 2-terminal device**
 
-   For larger-sized 2-terminal SMD devices including cylindrical MELF components, it is recommended to use the C-shaped (shown in Figure 3-9 of IPC-7525A). By doing so, short circuits -- which are generally caused by solder paste adsorption along the device or solder paste application due to gravity extrusion of the device -- can be avoided
+   For larger-sized 2-terminal SMD devices including cylindrical MELF components, it is recommended to use the C-shaped (shown in Figure 3-9 of IPC-7525A). By doing so, short circuits -- which are generally caused by solder paste adsorption along the device or solder paste application due to gravity extrusion of the device -- can be avoided  
+   ![](/images/pcb-stencil-04.png)
+
+## Mesh Production Process
+
+Stencil designs are usually done using EDA software, where it most uses the default packaging rules ratio of 1:1. In practice, chip factories still need to redesign and manufacture the stencil according to the solder paste specifications used, the printing machine, and the manufacturer's experience.
+
+NexPCB has many years of experience in the production and manufacturing of electronic products including the process of stencil design and production workflow as shown in the figure. 
+
+![](/images/pcb-stencil-05.png)
