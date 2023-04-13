@@ -39,4 +39,24 @@ Most stencils are now being made using the laser cutting process. Thus, the fini
 
 5. **Stencil separation speed**
 
-The separation speed of the printing machine will also affect the quality and effect of soldering. Usually, the solder paste used in combination with different placement factories will have some accumulated experience, and will also form a general requirement for the design opening. For example, manufacturer A will request to reduce the opening area, while manufacturer B may request to extend the length, chamfer, or change the shape of the opening for the same product.
+The separation speed of the printing machine will also affect the quality and effect of soldering. Usually, the solder paste used in combination with different placement factories will have some accumulated experience, and will also form a general requirement for the design opening. For example, manufacturer A will request to reduce the opening area, while manufacturer B may request to extend the length, chamfer, or change the shape of the opening for the same product. 
+
+ 
+
+ 
+
+## Special Cases
+
+As mentioned before, the IPC-7525A stencil design guide can't always be used as a standard design rule set, because in actual production, some special situations should be handled directly based on the handler's experience.
+
+A Ground Thermal Pad
+
+The ground thermal pad is usually a large area of copper and needs to be brushed with solder paste and flow soldered. In the actual process, the large area of the solder paste has a strong adsorption force, and the large area is arched or shrunk into a circle due to surface tension fusion. shape. Therefore, it is usually necessary to shrink inward by 50%-80%, and it is generally designed as a grid mesh.
+
+B QFP with grounded thermal pad
+
+The QFP with ground thermal pad is a special package. Because of the existence of surrounding pins, the surrounding pins will form a lever state with the middle ground thermal pad. The thickness of the tin on it (you need to check the device specification to compare the pin There may be differences in the height and body height) and the speed of heat dissipation, which may also lead to a situation where the surrounding is high and the middle is weak, or the middle is lifted and the surrounding is weak. This kind of package will generally shrink in a grid (need to follow the shrinkage ratio in the specification) or design a stepped steel mesh according to the requirements of the specification (that is, the thickness of different parts of the same steel mesh is different).
+
+C Large size 2-terminal device
+
+For larger-sized 2-terminal SMD devices including cylindrical MELF components, it is recommended to use the C-shaped shape in Figure 3-9 of IPC-7525A, which can avoid short circuit caused by solder paste adsorption along the device or solder paste due to gravity extrusion of the device. Cream spilled.
