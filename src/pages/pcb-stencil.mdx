@@ -2,7 +2,8 @@
 title: PCB Stencil
 description: ''
 author: Jacen Wang
-categories: []
+categories:
+- electronics
 date: 
 featured: false
 tags:
@@ -16,4 +17,26 @@ A PCB stencil is usually made up of a thin steel sheet that is holed according t
 
 This being said a PCB stencil is the most crucial part of creating a PCB layout. To understand more about its role, we'll be discussing its own working principles and application scenarios that should be understood first.
 
-    
+## Stencil Mesh Design Considerations 
+
+In actual design, there are more factors affecting solder paste printing, such as
+
+1. **Types of solder paste**
+
+Leaded solder paste is more fluid than lead-free solder paste. Hence, using leaded solder paste will generally shrink the printed pad pattern. Most companies nowadays use **lead-free solder paste**, in which the **mesh-to-pad ratio are 1:1** -- i.e., it's always assumed there's no solder paste shrinkage. 
+
+2. **The particle size of solder paste**
+
+Solder paste comes in different sizes. When solder paste with larger particle sizes is used for narrow meshes or thin stencils, the amount of solder placed may not be sufficient. Therefore, smaller solder paste particles are usually required for small areas and thin stencils.
+
+3. **Geometry of opening side walls**
+
+Irregular geometric shapes, especially sharp angles, will increase the risk of the solder paste coming out patchy. When the printed solder paste is not smooth, the soldering process becomes harder and the components will fall off easily. Therefore, some smaller-sized package pads will be designed as arc pads and rectangular small-sized pads are chamfered or elongated.
+
+4. **Stencil mesh wall smoothness**
+
+Most stencils are now being made using the laser cutting process. Thus, the finish of these stencils' walls is generally very smooth, which eases the process of solder paste placement. However, some thicker stencils are still made with a stamping process, which requires an additional polishing process to create a smooth inner wall. 
+
+5. **Stencil separation speed**
+
+The separation speed of the printing machine will also affect the quality and effect of soldering. Usually, the solder paste used in combination with different placement factories will have some accumulated experience, and will also form a general requirement for the design opening. For example, manufacturer A will request to reduce the opening area, while manufacturer B may request to extend the length, chamfer, or change the shape of the opening for the same product.
