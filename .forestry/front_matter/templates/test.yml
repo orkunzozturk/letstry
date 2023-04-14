@@ -27,6 +27,7 @@ fields:
   name: relatedArticles
   label: relatedArticles
 pages:
+- src/pages/anti-static-esd-packaging.mdx
 - src/pages/bill-of-landing.mdx
 - src/pages/bill-of-materials-bom.mdx
 - src/pages/boxbuild-assembly.mdx
