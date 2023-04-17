@@ -33,6 +33,7 @@ pages:
 - src/pages/boxbuild-assembly.mdx
 - src/pages/ce.mdx
 - src/pages/custom-clearance.mdx
+- src/pages/custom-packaging.mdx
 - src/pages/dropshipping.mdx
 - src/pages/emc-and-emi-compliance.mdx
 - src/pages/fcc.mdx
