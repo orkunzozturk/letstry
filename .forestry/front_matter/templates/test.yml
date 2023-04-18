@@ -46,6 +46,7 @@ pages:
 - src/pages/innovation-consulting.mdx
 - src/pages/international-product-returns.mdx
 - src/pages/invoicing.mdx
+- src/pages/labels.mdx
 - src/pages/lifecycle-management.mdx
 - src/pages/new-product-introduction-npi.mdx
 - src/pages/new-technology-introduction-nti.mdx
